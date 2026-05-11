@@ -59,7 +59,7 @@ export default function LandingPage() {
         { value: "Lõputu", title: "Sihikindlus" },
         { value: "Suurepärane", title: "Suhtlemisoskus" },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/american-football-american-football-player-professional-sport-stadium_654080-243.jpg?_wi=2"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778528265220-38u8sw9b.jpg"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
       imageAlt="dance studio action shot"
