@@ -44,7 +44,7 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin headshot"
       mediaAnimation="slide-up"
-      className="[&_.card]:border-none"
+      className="[&_.card]:bg-transparent [&_.card]:border-none [&_.card]:shadow-none"
     />
   </div>
 
