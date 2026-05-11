@@ -6,10 +6,8 @@ import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
-import MetricCardFourteen from '@/components/sections/metrics/MetricCardFourteen';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCardOne';
 
 export default function LandingPage() {
   return (
@@ -46,6 +44,7 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin headshot"
       mediaAnimation="slide-up"
+      className="[&_.card]:border-none"
     />
   </div>
 
