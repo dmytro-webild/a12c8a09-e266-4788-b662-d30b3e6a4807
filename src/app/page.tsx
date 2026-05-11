@@ -42,7 +42,7 @@ export default function LandingPage() {
       <HeroSplit
       background={{ variant: "radial-gradient" }}
       title="Lazar Uleksin"
-      description="\"Distsipliin on tegemine isegi siis, kui sa seda ei tunne.\""
+      description="Distsipliin on tegemine isegi siis, kui sa seda ei tunne."
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin"
       mediaAnimation="blur-reveal"
