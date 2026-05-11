@@ -66,7 +66,7 @@ export default function LandingPage() {
               metrics={[
                 { id: "s1", value: "10+", description: "Aastat tantsukogemust" },
                 { id: "s2", value: "50+", description: "Külastatud paika" },
-                { id: "s3", value: "100+", description: "Professionaalset fotot"
+                { id: "s3", value: "100+", description: "Professionaalset fotot" }
               ]}
             />
         </div>
