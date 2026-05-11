@@ -42,7 +42,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
             <HeroBillboardCarousel
               title="Lazar Uleksin"
-              description="\"Distsipliin on see, kui teed asju ka siis, kui sa tegelikult ei taha.\""
+              description="Distsipliin on see, kui teed asju ka siis, kui sa tegelikult ei taha."
               background={{ variant: "sparkles-gradient" }}
               mediaItems={[
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg" }
