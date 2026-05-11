@@ -64,7 +64,7 @@ export default function LandingPage() {
           handle: "@danceclub",
           testimonial: "Lazar has been incredibly disciplined for over a decade.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg?_wi=1",
           imageAlt: "professional headshot man suit",
         },
         {
@@ -72,7 +72,7 @@ export default function LandingPage() {
           handle: "@footballclub",
           testimonial: "Excellent team player and always hardworking on the field.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/american-football-american-football-player-professional-sport-stadium_654080-243.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/american-football-american-football-player-professional-sport-stadium_654080-243.jpg?_wi=1",
           imageAlt: "professional headshot man suit",
         },
         {
@@ -80,7 +80,7 @@ export default function LandingPage() {
           handle: "@office",
           testimonial: "Great attitude and focus on personal growth.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg?_wi=1",
           imageAlt: "professional headshot man suit",
         },
         {
@@ -88,7 +88,7 @@ export default function LandingPage() {
           handle: "@dance",
           testimonial: "Reliable and focused on collective success.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg?_wi=1",
           imageAlt: "professional headshot man suit",
         },
         {
@@ -96,11 +96,11 @@ export default function LandingPage() {
           handle: "@service",
           testimonial: "Always helpful and communicates clearly.",
           rating: 5,
-          imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg?_wi=1",
           imageAlt: "professional headshot man suit",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg?_wi=2"
       imageAlt="Lazar Uleksin headshot"
       avatars={[
         {
@@ -168,7 +168,7 @@ export default function LandingPage() {
           title: "Suhtlemisoskus",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/american-football-american-football-player-professional-sport-stadium_654080-243.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/american-football-american-football-player-professional-sport-stadium_654080-243.jpg?_wi=2"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
       imageAlt="dance studio action shot"
@@ -190,7 +190,7 @@ export default function LandingPage() {
             "Tants",
             "Distsipliin",
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg?_wi=2",
         },
         {
           id: "p2",
@@ -201,7 +201,7 @@ export default function LandingPage() {
             "Jalgpall",
             "Meeskond",
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg?_wi=2",
         },
         {
           id: "p3",
@@ -212,7 +212,7 @@ export default function LandingPage() {
             "Teenindus",
             "Kommunikatsioon",
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg?_wi=2",
         },
       ]}
       title="Minu projektid"
@@ -354,7 +354,7 @@ export default function LandingPage() {
       description="Olen avatud uutele väljakutsetele ja tööpakkumistele."
       mediaAnimation="slide-up"
       mediaPosition="right"
-      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg"
+      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg?_wi=3"
     />
   </div>
 
