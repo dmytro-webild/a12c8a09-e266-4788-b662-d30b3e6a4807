@@ -42,7 +42,7 @@ export default function LandingPage() {
       <HeroSplit
       background={{ variant: "gradient-bars" }}
       title="Lazar Uleksin"
-      description="Active, hardworking, and dedicated. Passionate about dance, sports, and delivering exceptional customer service."
+      description="&quot;Discipline is doing it even when you don't feel like it.&quot;"
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin headshot"
       mediaAnimation="slide-up"
