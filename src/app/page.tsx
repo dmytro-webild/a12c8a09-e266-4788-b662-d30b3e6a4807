@@ -43,7 +43,7 @@ export default function LandingPage() {
       background={{ variant: "gradient-bars" }}
       title="Lazar Uleksin"
       description="Active, hardworking, and dedicated. Passionate about dance, sports, and delivering exceptional customer service."
-      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg?_wi=2"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin headshot"
       mediaAnimation="slide-up"
     />
