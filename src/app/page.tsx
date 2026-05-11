@@ -42,7 +42,7 @@ export default function LandingPage() {
         <div id="hero" data-section="hero">
             <HeroBillboardCarousel
               title="Lazar Uleksin"
-              description="&quot;Distsipliin on see, kui teed asju ka siis, kui sa tegelikult ei taha.&quot;"
+              description="\"Distsipliin on see, kui teed asju ka siis, kui sa tegelikult ei taha.\""
               background={{ variant: "sparkles-gradient" }}
               mediaItems={[
                 { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg" }
@@ -56,6 +56,7 @@ export default function LandingPage() {
               description={[
                 "Tantsija, kes väärtustab rütmi ja graatsiat.",                "Jalgpallur, kes usub meeskonnatöösse.",                "Fotograaf, kes jäädvustab maailma ilu.",                "Reisija, kes avastab uusi horisonte."
               ]}
+              useInvertedBackground={false}
             />
         </div>
 
@@ -68,15 +69,18 @@ export default function LandingPage() {
                 { id: "s2", value: "50+", description: "Külastatud paika" },
                 { id: "s3", value: "100+", description: "Professionaalset fotot" }
               ]}
+              useInvertedBackground={false}
             />
         </div>
 
         <div id="skills" data-section="skills">
             <FeatureCardThree
               title="Oskused"
+              description="Minu oskused ja tugevused"
               gridVariant="four-items-2x2-equal-grid"
               animationType="blur-reveal"
               textboxLayout="default"
+              useInvertedBackground={false}
               features={[
                 { title: "Distsipliin", description: "Raske töö ja järjepidevus", imageSrc: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800" },
                 { title: "Meeskonnatöö", description: "Koostöö jalgpalliväljakul", imageSrc: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800" },
@@ -89,9 +93,11 @@ export default function LandingPage() {
         <div id="gallery" data-section="gallery">
             <FeatureCardThree
               title="Fotogalerii"
+              description="Minu jäädvustatud hetked"
               gridVariant="bento-grid"
               animationType="scale-rotate"
               textboxLayout="default"
+              useInvertedBackground={false}
               features={[
                 { title: "Reisid", description: "Maailma avastamine", imageSrc: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800" },
                 { title: "Tants", description: "Liikumise ilu", imageSrc: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800" },
@@ -104,6 +110,7 @@ export default function LandingPage() {
             <ContactText
               text="Kõik, mida vajad, on siin."
               background={{ variant: "radial-gradient" }}
+              useInvertedBackground={false}
             />
         </div>
 
