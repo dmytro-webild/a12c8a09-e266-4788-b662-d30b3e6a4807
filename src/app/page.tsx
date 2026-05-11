@@ -8,6 +8,8 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import MetricCardFourteen from '@/components/sections/metrics/MetricCardFourteen';
+import ContactText from '@/components/sections/contact/ContactText';
 
 export default function LandingPage() {
   return (
@@ -17,20 +19,20 @@ export default function LandingPage() {
         borderRadius="soft"
         contentWidth="compact"
         sizing="mediumLarge"
-        background="noiseDiagonalGradient"
-        cardStyle="subtle-shadow"
-        primaryButtonStyle="shadow"
-        secondaryButtonStyle="layered"
-        headingFontWeight="bold"
+        background="noise"
+        cardStyle="glass-depth"
+        primaryButtonStyle="primary-glow"
+        secondaryButtonStyle="glass"
+        headingFontWeight="semibold"
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
       <NavbarStyleFullscreen
       navItems={[
-        { name: "Home", id: "hero" },
-        { name: "About", id: "about" },
-        { name: "Projects", id: "projects" },
-        { name: "Contact", id: "contact" },
+        { name: "Kodu", id: "hero" },
+        { name: "Minust", id: "about" },
+        { name: "Projektid", id: "projects" },
+        { name: "Kontakt", id: "contact" },
       ]}
       brandName="Lazar Uleksin"
     />
@@ -38,30 +40,39 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroSplit
-      background={{ variant: "gradient-bars" }}
+      background={{ variant: "radial-gradient" }}
       title="Lazar Uleksin"
-      description="&quot;Discipline is doing it even when you don't feel like it.&quot;"
+      description="Distsipliin on tegemine isegi siis, kui sa seda ei tunne."
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
-      imageAlt="Lazar Uleksin headshot"
-      mediaAnimation="slide-up"
-      className="[&_.card]:bg-transparent [&_.card]:border-none [&_.card]:shadow-none"
+      imageAlt="Lazar Uleksin"
+      mediaAnimation="blur-reveal"
     />
   </div>
 
   <div id="about" data-section="about">
       <MetricSplitMediaAbout
-      useInvertedBackground={false}
-      title="Minust ja minu teekonnast"
-      description="Olen olnud aktiivne võistlustantsija 10 aastat ja mängin jalgpalli rahvaliigas. Need kogemused on õpetanud mulle väärtuslikke oskusi: distsipliini, meeskonnatööd ja sihikindlust, mida rakendan igas oma ettevõtmises."
+      useInvertedBackground={true}
+      title="Minu lugu ja kirg"
+      description="Olen pühendunud võistlustantsija (10 aastat) ja jalgpallur rahvaliigas. Minu elu on ehitatud distsipliinile, meeskonnatööle ja pidevale enesearengule."
       metrics={[
-        { value: "10+", title: "Aastat tantsukogemust" },
-        { value: "Lõputu", title: "Sihikindlus" },
-        { value: "Suurepärane", title: "Suhtlemisoskus" },
+        { value: "10+", title: "Aastat tantsu" },
+        { value: "Jalgpall", title: "Rahvaliiga" },
+        { value: "Kirg", title: "Fotograafia & Reisimine" },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778529067120-vmzxhbh5.png"
       mediaAnimation="slide-up"
-      metricsAnimation="slide-up"
-      imageAlt="dance studio action shot"
+    />
+  </div>
+
+  <div id="stats" data-section="stats">
+    <MetricCardFourteen
+        title="Minu areng"
+        tag="Statistika"
+        metrics={[
+            { id: "s1", value: "10", description: "Võistlusaastat" },
+            { id: "s2", value: "50+", description: "Jalgpallimatši" },
+            { id: "s3", value: "20+", description: "Külastatud riiki" }
+        ]}
+        useInvertedBackground={true}
     />
   </div>
 
@@ -69,27 +80,32 @@ export default function LandingPage() {
       <FeatureCardTwentyFour
       animationType="slide-up"
       textboxLayout="split"
-      useInvertedBackground={false}
+      useInvertedBackground={true}
+      title="Isiklikud projektid"
+      description="Siin on ruum minu isiklikele ettevõtmistele, spordiprojektidele ja loovatele algatustele."
       features={[
-        { id: "p1", title: "Võistlustantsu projekt", author: "Lazar Uleksin", description: "Rahvaliiga klubi loomine", tags: ["Jalgpall ", "Distsipliin"], imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg?_wi=2" },
-        { id: "p2", title: "Rahvaliiga Jalgpall", author: "Lazar Uleksin", description: "Meeskonnatöö arendamine läbi spordi.", tags: ["Jalgpall", "Fotograafia "], imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg?_wi=2" },
-        { id: "p3", title: "Klienditeenindus", author: "Lazar Uleksin", description: "Suhtlemisoskuse lihvimine.", tags: ["Teenindus", "Kommunikatsioon"], imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg?_wi=2" },
+        { id: "p1", title: "Spordiklubi arendus", author: "Lazar Uleksin", description: "Uue kontseptsiooniga spordiklubi loomine, keskendudes meeskonnatööle.", tags: ["Sport", "Juhtimine"], imageSrc: "https://img.b2bpic.net/free-photo/soccer-ball-field-close-up-shot_23-2148816912.jpg" },
+        { id: "p2", title: "Fotograafia portfoolio", author: "Lazar Uleksin", description: "Hetkede jäädvustamine minu reisidelt ja igapäevaelust.", tags: ["Foto", "Reisid"], imageSrc: "https://img.b2bpic.net/free-photo/landscape-mountains-sunset_23-2148119041.jpg" },
       ]}
-      title="Minu projektid"
-      description="Siin on ülevaade minu varasematest projektidest ja tegevustest."
+    />
+  </div>
+
+  <div id="quote" data-section="quote">
+    <ContactText 
+        text="Edu ei ole juhus, see on valik."
+        background={{ variant: "sparkles-gradient" }}
+        useInvertedBackground={true}
     />
   </div>
 
   <div id="contact" data-section="contact">
       <ContactSplit
-      useInvertedBackground={false}
-      background={{ variant: "plain" }}
-      tag="Kontakt"
-      title="Võta minuga ühendust"
-      description="Olen avatud uutele väljakutsetele ja tööpakkumistele."
-      mediaAnimation="slide-up"
-      mediaPosition="right"
-      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg?_wi=3"
+      useInvertedBackground={true}
+      background={{ variant: "gradient-bars" }}
+      tag="Võta ühendust"
+      title="Tee koostööd"
+      description="Olen avatud uutele ideedele ja professionaalsetele väljakutsetele."
+      imageSrc="https://img.b2bpic.net/free-photo/handsome-man-looking-away_23-2148130416.jpg"
     />
   </div>
 
@@ -97,8 +113,8 @@ export default function LandingPage() {
       <FooterBaseReveal
       logoText="Lazar Uleksin"
       columns={[
-        { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
-        { title: "Navigatsioon", items: [{ label: "Kodu", href: "#hero" }, { label: "About", href: "#about" }, { label: "Kontakt", href: "#contact" }] },
+        { title: "Lingid", items: [{ label: "Kodu", href: "#hero" }, { label: "Minust", href: "#about" }] },
+        { title: "Sotsiaal", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
       ]}
     />
   </div>
