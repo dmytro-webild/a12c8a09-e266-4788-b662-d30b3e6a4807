@@ -71,7 +71,7 @@ export default function LandingPage() {
       textboxLayout="split"
       useInvertedBackground={false}
       features={[
-        { id: "p1", title: "Võistlustantsu projekt", author: "Lazar Uleksin", description: "Rahvaliiga klubi loomine", tags: ["Jalgpall ", "Distsipliin"], imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg?_wi=2" },
+        { id: "p1", title: "Võistlustantsu projekt", author: "Lazar Uleksin", description: "Rahvaliiga klubi loomine", tags: ["Jalgpall ", "Distsipliin"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png" },
         { id: "p2", title: "Rahvaliiga Jalgpall", author: "Lazar Uleksin", description: "Meeskonnatöö arendamine läbi spordi.", tags: ["Jalgpall", "Fotograafia "], imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg?_wi=2" },
         { id: "p3", title: "Klienditeenindus", author: "Lazar Uleksin", description: "Suhtlemisoskuse lihvimine.", tags: ["Teenindus", "Kommunikatsioon"], imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg?_wi=2" },
       ]}
