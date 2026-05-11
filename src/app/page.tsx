@@ -10,7 +10,6 @@ import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaA
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import MetricCardFourteen from '@/components/sections/metrics/MetricCardFourteen';
 import ContactText from '@/components/sections/contact/ContactText';
-import { Sparkles, Trophy, Heart, Briefcase, Camera, BookOpen } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -43,7 +42,7 @@ export default function LandingPage() {
       <HeroSplit
       background={{ variant: "radial-gradient" }}
       title="Lazar Uleksin"
-      description="&quot;Distsipliin on tegemine isegi siis, kui sa seda ei tunne.&quot;"
+      description="\"Distsipliin on tegemine isegi siis, kui sa seda ei tunne.\""
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin"
       mediaAnimation="blur-reveal"
@@ -73,6 +72,7 @@ export default function LandingPage() {
             { id: "s2", value: "50+", description: "Jalgpallimatši" },
             { id: "s3", value: "20+", description: "Külastatud riiki" }
         ]}
+        useInvertedBackground={true}
     />
   </div>
 
@@ -92,8 +92,9 @@ export default function LandingPage() {
 
   <div id="quote" data-section="quote">
     <ContactText 
-        text="'Edu ei ole juhus, see on valik.'"
+        text="Edu ei ole juhus, see on valik."
         background={{ variant: "sparkles-gradient" }}
+        useInvertedBackground={true}
     />
   </div>
 
