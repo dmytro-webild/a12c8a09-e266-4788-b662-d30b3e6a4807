@@ -2,128 +2,106 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import ContactText from '@/components/sections/contact/ContactText';
-import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';
-import FooterSimple from '@/components/sections/footer/FooterSimple';
-import HeroBillboardCarousel from '@/components/sections/hero/HeroBillboardCarousel';
-import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
-import MetricCardFourteen from '@/components/sections/metrics/MetricCardFourteen';
+import ContactSplit from '@/components/sections/contact/ContactSplit';
+import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
+import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import HeroSplit from '@/components/sections/hero/HeroSplit';
+import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 
 export default function LandingPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="bounce-effect"
-        defaultTextAnimation="reveal-blur"
-        borderRadius="pill"
-        contentWidth="medium"
-        sizing="largeSizeMediumTitles"
-        background="noise"
-        cardStyle="glass-elevated"
-        primaryButtonStyle="primary-glow"
-        secondaryButtonStyle="glass"
-        headingFontWeight="semibold"
+        defaultTextAnimation="entrance-slide"
+        borderRadius="soft"
+        contentWidth="compact"
+        sizing="mediumLarge"
+        background="noiseDiagonalGradient"
+        cardStyle="subtle-shadow"
+        primaryButtonStyle="shadow"
+        secondaryButtonStyle="layered"
+        headingFontWeight="bold"
     >
       <ReactLenis root>
-        <div id="nav" data-section="nav">
-            <NavbarStyleFullscreen
-              navItems={[
-                { name: "Avaleht", id: "hero" },
-                { name: "Minust", id: "about" },
-                { name: "Statistika", id: "stats" },
-                { name: "Oskused", id: "skills" },
-                { name: "Projektid", id: "gallery" },
-                { name: "Kontakt", id: "contact" },
-              ]}
-              brandName="Lazar Uleksin"
-            />
-        </div>
+  <div id="nav" data-section="nav">
+      <NavbarStyleFullscreen
+      navItems={[
+        { name: "Home", id: "hero" },
+        { name: "About", id: "about" },
+        { name: "Projects", id: "projects" },
+        { name: "Contact", id: "contact" },
+      ]}
+      brandName="Lazar Uleksin"
+    />
+  </div>
 
-        <div id="hero" data-section="hero">
-            <HeroBillboardCarousel
-              title="Lazar Uleksin"
-              description="Distsipliin on see, kui teed asju ka siis, kui sa tegelikult ei taha."
-              background={{ variant: "sparkles-gradient" }}
-              mediaItems={[
-                { imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg" }
-              ]}
-            />
-        </div>
+  <div id="hero" data-section="hero">
+      <HeroSplit
+      background={{ variant: "gradient-bars" }}
+      title="Lazar Uleksin"
+      description="&quot;Discipline is doing it even when you don't feel like it.&quot;"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
+      imageAlt="Lazar Uleksin headshot"
+      mediaAnimation="slide-up"
+      className="[&_.card]:bg-transparent [&_.card]:border-none [&_.card]:shadow-none"
+    />
+  </div>
 
-        <div id="about" data-section="about">
-            <TextSplitAbout
-              title="Minu teekond"
-              description={[
-                "Tantsija, kes väärtustab rütmi ja graatsiat.",                "Jalgpallur, kes usub meeskonnatöösse.",                "Fotograaf, kes jäädvustab maailma ilu.",                "Reisija, kes avastab uusi horisonte."
-              ]}
-              useInvertedBackground={false}
-            />
-        </div>
+  <div id="about" data-section="about">
+      <MetricSplitMediaAbout
+      useInvertedBackground={false}
+      title="Minust ja minu teekonnast"
+      description="Olen olnud aktiivne võistlustantsija 10 aastat ja mängin jalgpalli rahvaliigas. Need kogemused on õpetanud mulle väärtuslikke oskusi: distsipliini, meeskonnatööd ja sihikindlust, mida rakendan igas oma ettevõtmises."
+      metrics={[
+        { value: "10+", title: "Aastat tantsukogemust" },
+        { value: "Lõputu", title: "Sihikindlus" },
+        { value: "Suurepärane", title: "Suhtlemisoskus" },
+      ]}
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778528265220-38u8sw9b.jpg"
+      mediaAnimation="slide-up"
+      metricsAnimation="slide-up"
+      imageAlt="dance studio action shot"
+    />
+  </div>
 
-        <div id="stats" data-section="stats">
-            <MetricCardFourteen
-              title="Minu saavutused"
-              tag="Statistika"
-              metrics={[
-                { id: "s1", value: "10+", description: "Aastat tantsukogemust" },
-                { id: "s2", value: "50+", description: "Külastatud paika" },
-                { id: "s3", value: "100+", description: "Professionaalset fotot" }
-              ]}
-              useInvertedBackground={false}
-            />
-        </div>
+  <div id="projects" data-section="projects">
+      <FeatureCardTwentyFour
+      animationType="slide-up"
+      textboxLayout="split"
+      useInvertedBackground={false}
+      features={[
+        { id: "p1", title: "Võistlustantsu projekt", author: "Lazar Uleksin", description: "10-aastane teekond professionaalsel tasemel.", tags: ["Tants", "Distsipliin"], imageSrc: "http://img.b2bpic.net/free-photo/representations-user-experience-interface-design_23-2150038913.jpg?_wi=2" },
+        { id: "p2", title: "Rahvaliiga Jalgpall", author: "Lazar Uleksin", description: "Meeskonnatöö arendamine läbi spordi.", tags: ["Jalgpall", "Meeskond"], imageSrc: "http://img.b2bpic.net/free-photo/using-device-corporate-touchpad-network-multimedia_1421-248.jpg?_wi=2" },
+        { id: "p3", title: "Klienditeenindus", author: "Lazar Uleksin", description: "Suhtlemisoskuse lihvimine.", tags: ["Teenindus", "Kommunikatsioon"], imageSrc: "http://img.b2bpic.net/free-photo/hispanic-woman-using-digital-tablet_53876-95581.jpg?_wi=2" },
+      ]}
+      title="Minu projektid"
+      description="Siin on ülevaade minu varasematest projektidest ja tegevustest."
+    />
+  </div>
 
-        <div id="skills" data-section="skills">
-            <FeatureCardThree
-              title="Oskused"
-              description="Minu oskused ja tugevused"
-              gridVariant="four-items-2x2-equal-grid"
-              animationType="blur-reveal"
-              textboxLayout="default"
-              useInvertedBackground={false}
-              features={[
-                { title: "Distsipliin", description: "Raske töö ja järjepidevus", imageSrc: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800" },
-                { title: "Meeskonnatöö", description: "Koostöö jalgpalliväljakul", imageSrc: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800" },
-                { title: "Loovus", description: "Fotograafia ja reisimine", imageSrc: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=800" },
-                { title: "Suhtlemine", description: "Inimeste ja kultuuride mõistmine", imageSrc: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800" }
-              ]}
-            />
-        </div>
+  <div id="contact" data-section="contact">
+      <ContactSplit
+      useInvertedBackground={false}
+      background={{ variant: "plain" }}
+      tag="Kontakt"
+      title="Võta minuga ühendust"
+      description="Olen avatud uutele väljakutsetele ja tööpakkumistele."
+      mediaAnimation="slide-up"
+      mediaPosition="right"
+      imageSrc="http://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg?_wi=3"
+    />
+  </div>
 
-        <div id="gallery" data-section="gallery">
-            <FeatureCardThree
-              title="Fotogalerii"
-              description="Minu jäädvustatud hetked"
-              gridVariant="bento-grid"
-              animationType="scale-rotate"
-              textboxLayout="default"
-              useInvertedBackground={false}
-              features={[
-                { title: "Reisid", description: "Maailma avastamine", imageSrc: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=800" },
-                { title: "Tants", description: "Liikumise ilu", imageSrc: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?q=80&w=800" },
-                { title: "Sport", description: "Energia ja kirg", imageSrc: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800" }
-              ]}
-            />
-        </div>
-
-        <div id="contact" data-section="contact">
-            <ContactText
-              text="Kõik, mida vajad, on siin."
-              background={{ variant: "radial-gradient" }}
-              useInvertedBackground={false}
-            />
-        </div>
-
-        <div id="footer" data-section="footer">
-            <FooterSimple
-              columns={[
-                { title: "Lingid", items: [{ label: "LinkedIn" }, { label: "Instagram" }] },
-                { title: "Eesti", items: [{ label: "Motivatsioon" }] }
-              ]}
-              bottomLeftText="© 2024 Lazar Uleksin"
-              bottomRightText="Valmistatud Eestis"
-            />
-        </div>
+  <div id="footer" data-section="footer">
+      <FooterBaseReveal
+      logoText="Lazar Uleksin"
+      columns={[
+        { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
+        { title: "Navigatsioon", items: [{ label: "Kodu", href: "#hero" }, { label: "About", href: "#about" }, { label: "Kontakt", href: "#contact" }] },
+      ]}
+    />
+  </div>
       </ReactLenis>
     </ThemeProvider>
   );
