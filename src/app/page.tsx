@@ -52,7 +52,7 @@ export default function LandingPage() {
       <MetricSplitMediaAbout
       useInvertedBackground={false}
       title="Minust ja minu teekonnast"
-      description="Olen olnud aktiivne võistlustantsija 10 aastat ja mängin jalgpalli rahvaliigas. Need kogemused on õpetanud mulle väärtuslikke oskusi: distsipliini, meeskonnatööd ja sihikindlust, mida rakendan igas oma ettevõtmises."
+      description='"Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu.  Reisimine on avanud mulle maailma'
       metrics={[
         { value: "10+", title: "Aastat tantsukogemust" },
         { value: "Lõputu", title: "Sihikindlus" },
