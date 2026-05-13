@@ -38,27 +38,40 @@ export default function AboutPage() {
         </div>
 
         <div id="about-content" data-section="about-content" className="pt-24">
-          <SplitAbout
-            title="Minu teekond ja areng"
-            description="18-aastane Tallinnast, kes ei suuda paigal istuda. Leian end kas tantsusaalist, jalgpalliväljakult või kuskil maailma teises otsas kaamera käes. Tants on andnud mulle distsipliini, jalgpall meeskonnavaimu ja reisimine perspektiivi — et maailm on palju suurem kui see, mida me ette kujutame. Usun, et parim versioon sinust sünnib siis, kui sa ei lõpeta liikumast."
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
-            imageAlt="Lazar Uleksin portree"
-            imagePosition="left"
-            textboxLayout="split"
-            useInvertedBackground={false}
-            mediaAnimation="slide-up"
-            bulletPoints={[]}
-          />
-          
           <div className="px-[var(--vw-1_5)] py-12 max-w-[var(--width-content-width)] mx-auto">
-            <label className="block text-lg font-semibold mb-4">Minu pikem tutvustus</label>
-            <Textarea 
-              value={bio} 
-              onChange={setBio} 
-              placeholder="Kirjuta siia oma pikem tutvustus..."
-              rows={10}
-              className="w-full p-4 rounded-lg border"
-            />
+            <h1 className="text-5xl font-bold mb-8">Minu kohta</h1>
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+                <div className="w-full">
+                  <img 
+                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2" 
+                      alt="Lazar Uleksin portree" 
+                      className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                <div className="w-full">
+                    <SplitAbout
+                        title="Minu teekond ja areng"
+                        description="18-aastane Tallinnast, kes ei suuda paigal istuda. Leian end kas tantsusaalist, jalgpalliväljakult või kuskil maailma teises otsas kaamera käes. Tants on andnud mulle distsipliini, jalgpall meeskonnavaimu ja reisimine perspektiivi — et maailm on palju suurem kui see, mida me ette kujutame. Usun, et parim versioon sinust sünnib siis, kui sa ei lõpeta liikumast."
+                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
+                        imageAlt="Lazar Uleksin portree"
+                        imagePosition="left"
+                        textboxLayout="split"
+                        useInvertedBackground={false}
+                        mediaAnimation="slide-up"
+                        bulletPoints={[]}
+                    />
+                    <div className="mt-8">
+                        <label className="block text-lg font-semibold mb-4">Minu pikem tutvustus</label>
+                        <Textarea 
+                        value={bio} 
+                        onChange={setBio} 
+                        placeholder="Kirjuta siia oma pikem tutvustus..."
+                        rows={10}
+                        className="w-full p-4 rounded-lg border"
+                        />
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
 
