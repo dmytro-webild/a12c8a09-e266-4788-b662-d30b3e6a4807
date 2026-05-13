@@ -54,6 +54,7 @@ export default function LandingPage() {
       description="Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu. Reisimine on avanud mulle maailma"
       textboxLayout="split"
       useInvertedBackground={false}
+      bulletPoints={[]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg"
       imageAlt="dance studio action shot"
       mediaAnimation="slide-up"
