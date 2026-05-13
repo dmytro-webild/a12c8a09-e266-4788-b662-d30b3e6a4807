@@ -3,15 +3,25 @@
 import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import Textarea from '@/components/form/Textarea';
 
 export default function ProjectsPage() {
   const [reasonings, setReasonings] = useState<Record<string, string>>({});
+  const [activeIndices, setActiveIndices] = useState<Record<string, number>>({});
 
   const handleReasoningChange = (id: string, value: string) => {
     setReasonings(prev => ({ ...prev, [id]: value }));
+  };
+
+  const nextSlide = (id: string, length: number) => {
+    setActiveIndices(prev => ({ ...prev, [id]: ((prev[id] || 0) + 1) % length }));
+  };
+
+  const prevSlide = (id: string, length: number) => {
+    setActiveIndices(prev => ({ ...prev, [id]: ((prev[id] || 0) - 1 + length) % length }));
   };
 
   const projects = [
@@ -55,21 +65,21 @@ export default function ProjectsPage() {
             {projects.map((project, index) => (
               <div key={project.id} className="space-y-12">
                 <h2 className="text-4xl font-bold border-b border-[var(--accent)] pb-6">{index + 1}. {project.title}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {project.images.map((src, i) => (
-                        <div key={i} className="relative overflow-hidden rounded-3xl">
-                            <img src={src} alt={project.title} className="w-full aspect-[4/3] object-cover transition-transform duration-500 hover:scale-105" />
-                        </div>
-                    ))}
+                <div className="relative">
+                    <div className="relative overflow-hidden rounded-3xl group">
+                        <img src={project.images[activeIndices[project.id] || 0]} alt={project.title} className="w-full aspect-[16/9] object-cover transition-transform duration-500" />
+                        <button onClick={() => prevSlide(project.id, project.images.length)} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-black/70"><ChevronLeft /></button>
+                        <button onClick={() => nextSlide(project.id, project.images.length)} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/50 text-white rounded-full hover:bg-black/70"><ChevronRight /></button>
+                    </div>
                 </div>
                 <div className="bg-[var(--card)] p-16 rounded-3xl border border-[var(--accent)] shadow-2xl">
                     <p className="text-2xl mb-12 leading-relaxed opacity-95">{project.description}</p>
                     <Textarea
                       value={reasonings[project.id] || ""}
                       onChange={(val) => handleReasoningChange(project.id, val)}
-                      placeholder="Lisa siia detailne kirjeldus sellest projektist..."
-                      rows={12}
-                      className="text-lg p-6 bg-transparent border border-[var(--accent)] rounded-xl focus:ring-2 focus:ring-[var(--primary-cta)]"
+                      placeholder="Lisa siia detailne ja põhjalik kirjeldus sellest projektist..."
+                      rows={20}
+                      className="text-lg p-8 bg-transparent border border-[var(--accent)] rounded-xl focus:ring-2 focus:ring-[var(--primary-cta)]"
                     />
                 </div>
               </div>
