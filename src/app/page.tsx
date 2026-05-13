@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FeatureCardTwentyFour from '@/components/sections/feature/FeatureCardTwentyFour';
+import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
@@ -40,7 +40,7 @@ export default function LandingPage() {
       <HeroSplit
       background={{ variant: "gradient-bars" }}
       title="Lazar Uleksin"
-      description="&quot;Discipline is doing it even when you don't feel like it.&quot;"
+      description="\"Discipline is doing it even when you don't feel like it.\""
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin headshot"
       mediaAnimation="slide-up"
@@ -66,19 +66,19 @@ export default function LandingPage() {
   </div>
 
   <div id="projects" data-section="projects">
-      <FeatureCardTwentyFour
+      <FeatureCardMedia
       animationType="slide-up"
       textboxLayout="split"
       useInvertedBackground={false}
-      features={[
-        { id: "p1", title: "Võistlustantsu projekt", author: "Fc Mis Vennad By Lazar Uleksin, Kevin Clyde Köst, Kris-Teven Laev", description: "Rahvaliiga klubi loomine", tags: ["Jalgpall ", "Meeskond"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png" },
-        { id: "p2", title: "Rahvaliiga Jalgpall", author: "Lazar Uleksin", description: "Meeskonnatöö arendamine läbi spordi.", tags: ["Tants ", "Meeskond"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg" },
-        { id: "p3", title: "Klienditeenindus", author: "Lazar Uleksin", description: "Suhtlemisoskuse lihvimine.", tags: ["Teenindus", "Kommunikatsioon"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg" },
-        { id: "p4", title: "Uus Projekt 1", author: "Lazar Uleksin", description: "Kirjeldus siia.", tags: ["Uus", "Innovatsioon"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg" },
-        { id: "p5", title: "Uus Projekt 2", author: "Lazar Uleksin", description: "Kirjeldus siia.", tags: ["Uus", "Innovatsioon"], imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg" }
-      ]}
       title="Minu projektid"
       description="Siin on ülevaade minu varasematest projektidest ja tegevustest."
+      features={[
+        { id: "p1", title: "Võistlustantsu projekt", description: "Rahvaliiga klubi loomine (Fc Mis Vennad).", tag: "Jalgpall", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png" },
+        { id: "p2", title: "Rahvaliiga Jalgpall", description: "Meeskonnatöö arendamine läbi spordi.", tag: "Tants", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg" },
+        { id: "p3", title: "Klienditeenindus", description: "Suhtlemisoskuse lihvimine.", tag: "Teenindus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg" },
+        { id: "p4", title: "Uus Projekt 1", description: "Innovatiivne projektiarendus.", tag: "Uus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg" },
+        { id: "p5", title: "Uus Projekt 2", description: "Järgmine suur ettevõtmine.", tag: "Innovatsioon", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg" }
+      ]}
     />
   </div>
 
