@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import SplitAbout from '@/components/sections/about/SplitAbout';
 import Textarea from '@/components/form/Textarea';
 
 export default function AboutPage() {
@@ -49,25 +48,14 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="w-full">
-                    <SplitAbout
-                        title="Minu teekond ja areng"
-                        description="18-aastane Tallinnast, kes ei suuda paigal istuda. Leian end kas tantsusaalist, jalgpalliväljakult või kuskil maailma teises otsas kaamera käes. Tants on andnud mulle distsipliini, jalgpall meeskonnavaimu ja reisimine perspektiivi — et maailm on palju suurem kui see, mida me ette kujutame. Usun, et parim versioon sinust sünnib siis, kui sa ei lõpeta liikumast."
-                        imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
-                        imageAlt="Lazar Uleksin portree"
-                        imagePosition="left"
-                        textboxLayout="split"
-                        useInvertedBackground={false}
-                        mediaAnimation="slide-up"
-                        bulletPoints={[]}
-                    />
-                    <div className="mt-8">
-                        <label className="block text-lg font-semibold mb-4">Minu pikem tutvustus</label>
+                    <div className="bg-[var(--card)] p-6 rounded-lg shadow-sm border border-[var(--accent)]">
+                        <label className="block text-lg font-semibold mb-4">Minu elulugu</label>
                         <Textarea 
-                        value={bio} 
-                        onChange={setBio} 
-                        placeholder="Kirjuta siia oma pikem tutvustus..."
-                        rows={10}
-                        className="w-full p-4 rounded-lg border"
+                            value={bio} 
+                            onChange={setBio} 
+                            placeholder="Kirjuta siia oma biograafia..."
+                            rows={15}
+                            className="w-full p-4 rounded-lg border bg-[var(--background)]"
                         />
                     </div>
                 </div>
