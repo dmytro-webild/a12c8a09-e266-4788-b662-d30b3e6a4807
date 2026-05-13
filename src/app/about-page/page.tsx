@@ -54,8 +54,8 @@ export default function AboutPage() {
                             value={bio} 
                             onChange={setBio} 
                             placeholder="Kirjuta siia oma biograafia..."
-                            rows={15}
-                            className="w-full p-4 rounded-lg border bg-[var(--background)]"
+                            rows={25}
+                            className="w-full p-6 rounded-lg border bg-[var(--background)] min-h-[400px]"
                         />
                     </div>
                 </div>
