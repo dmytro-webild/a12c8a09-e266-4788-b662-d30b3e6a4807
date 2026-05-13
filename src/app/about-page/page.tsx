@@ -3,8 +3,9 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import MediaAbout from '@/components/sections/about/MediaAbout';
+import TestimonialAboutCard from '@/components/sections/about/TestimonialAboutCard';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import { User } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -32,13 +33,12 @@ export default function AboutPage() {
         />
 
         <div id="about-content" data-section="about-content" className="pt-24">
-          <MediaAbout
-            title="Minu kohta"
-            description="Tere! Olen 18-aastane noormees Tallinnast, kelle kirg elus on pidev liikumine ja enesearendamine. Olgu see tantsupõrandal, jalgpalliväljakul või uusi riike avastades — ma usun, et kõige väärtuslikumad õppetunnid tulevad väljaspool mugavustsooni. Siin lehel jagan oma eluteed, kogemusi ja väärtusi, mis mind edasi viivad."
+          <TestimonialAboutCard
             tag="Biograafia"
-            buttons={[
-              { text: "Laadi alla minu CV", href: "/cv.pdf" }
-            ]}
+            title="Minu teekond ja areng"
+            description="Olen 18-aastane noormees Tallinnast, kelle kirg elus on pidev liikumine ja enesearendamine. Olgu see tantsupõrandal, jalgpalliväljakul või uusi riike avastades — ma usun, et kõige väärtuslikumad õppetunnid tulevad väljaspool mugavustsooni. Olen pühendunud tipptasemel klienditeenindusele ja pidevale uute oskuste omandamisele, mis aitavad mul kasvada nii isiklikult kui professionaalselt."
+            subdescription="Minu eesmärk on ühendada loovus, distsipliin ja meeskonnatöö, et luua väärtust igas ettevõtmises, mida ette võtan. See teekond on alles algus ning ootan põnevusega uusi väljakutseid, mis aitavad mul rakendada kõike seda, mida olen siiani õppinud."
+            icon={User}
             imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
             useInvertedBackground={false}
           />
