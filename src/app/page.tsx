@@ -55,7 +55,7 @@ export default function LandingPage() {
       description='"Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu.  Reisimine on avanud mulle maailma'
       metrics={[
         { value: "18 ", title: "Minu vanus" },
-        { value: "Lõputu", title: "Sihikindlus" },
+        { value: "Tallinn ", title: "Sihikindlus" },
         { value: "Suurepärane", title: "Suhtlemisoskus" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778529067120-vmzxhbh5.png"
