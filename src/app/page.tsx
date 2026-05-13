@@ -28,7 +28,7 @@ export default function LandingPage() {
       <NavbarStyleFullscreen
       navItems={[
         { name: "Home", id: "hero" },
-        { name: "About", id: "about" },
+        { name: "Minu kohta", id: "about-page" },
         { name: "Projects", id: "projects" },
         { name: "Contact", id: "contact" },
       ]}
@@ -103,7 +103,7 @@ export default function LandingPage() {
       logoText="Lazar Uleksin"
       columns={[
         { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
-        { title: "Navigatsioon", items: [{ label: "Kodu", href: "#hero" }, { label: "About", href: "#about" }, { label: "Kontakt", href: "#contact" }] },
+        { title: "Navigatsioon", items: [{ label: "Kodu", href: "#hero" }, { label: "Minu kohta", href: "/about-page" }, { label: "Kontakt", href: "#contact" }] },
       ]}
     />
   </div>
