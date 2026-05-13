@@ -3,7 +3,7 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
+import CardStack from '@/components/cardStack/CardStack';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
@@ -66,20 +66,19 @@ export default function LandingPage() {
   </div>
 
   <div id="projects" data-section="projects">
-      <FeatureCardMedia
+      <CardStack
       animationType="slide-up"
       textboxLayout="split"
       useInvertedBackground={false}
       title="Minu projektid"
       description="Siin on ülevaade minu varasematest projektidest ja tegevustest."
-      features={[
-        { id: "p1", title: "Võistlustantsu projekt", description: "Rahvaliiga klubi loomine (Fc Mis Vennad).", tag: "Jalgpall", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png" },
-        { id: "p2", title: "Rahvaliiga Jalgpall", description: "Meeskonnatöö arendamine läbi spordi.", tag: "Tants", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg" },
-        { id: "p3", title: "Klienditeenindus", description: "Suhtlemisoskuse lihvimine.", tag: "Teenindus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=1" },
-        { id: "p4", title: "Uus Projekt 1", description: "Innovatiivne projektiarendus.", tag: "Uus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=2" },
-        { id: "p5", title: "Uus Projekt 2", description: "Järgmine suur ettevõtmine.", tag: "Innovatsioon", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=3" }
-      ]}
-    />
+    >
+        <img src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png" alt="Võistlustantsu projekt" />
+        <img src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg" alt="Rahvaliiga Jalgpall" />
+        <img src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=1" alt="Klienditeenindus" />
+        <img src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=2" alt="Uus Projekt 1" />
+        <img src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=3" alt="Uus Projekt 2" />
+    </CardStack>
   </div>
 
   <div id="contact" data-section="contact">
