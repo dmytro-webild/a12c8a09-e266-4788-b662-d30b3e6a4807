@@ -6,7 +6,7 @@ import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
-import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
+import SplitAbout from '@/components/sections/about/SplitAbout';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 
 export default function LandingPage() {
@@ -49,19 +49,14 @@ export default function LandingPage() {
   </div>
 
   <div id="about" data-section="about">
-      <MetricSplitMediaAbout
-      useInvertedBackground={false}
+      <SplitAbout
       title="Minust ja minu teekonnast"
       description="Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu. Reisimine on avanud mulle maailma"
-      metrics={[
-        { value: "18 ", title: "Minu vanus" },
-        { value: "Tallinn ", title: "Asukoht " },
-        { value: "Suurepärane", title: "Suhtlemisoskus" },
-      ]}
+      textboxLayout="split"
+      useInvertedBackground={false}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg"
-      mediaAnimation="slide-up"
-      metricsAnimation="slide-up"
       imageAlt="dance studio action shot"
+      mediaAnimation="slide-up"
     />
   </div>
 
