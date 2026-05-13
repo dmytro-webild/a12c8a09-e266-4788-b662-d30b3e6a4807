@@ -58,7 +58,7 @@ export default function LandingPage() {
         { value: "Tallinn ", title: "Asukoht " },
         { value: "Suurepärane", title: "Suhtlemisoskus" },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=1"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
       imageAlt="dance studio action shot"
