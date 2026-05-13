@@ -44,6 +44,7 @@ export default function AboutPage() {
               }
             ]}
             useInvertedBackground={false}
+            textBoxClassName="flex-[1.5]"
           />
         </div>
 
