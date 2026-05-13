@@ -7,7 +7,7 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 export default function AboutPage() {
-  const [bio, setBio] = useState("");
+  const [bio, setBio] = useState("Minu elu on olnud täis sporti, pühendumist ja pidevat enesearengut. Olen 18-aastane noor Tallinnast, kes leiab inspiratsiooni liikumisest — olgu selleks siis tantsusaal, jalgpalliväljak või kaamera taga maailma avastamine. Minu jaoks on sport midagi palju enamat kui lihtsalt füüsiline tegevus; see on distsipliini kool, mis on õpetanud mind olema kannatlik, meeskonnale orienteeritud ja eesmärgikindel. Reisimine on lisanud sellele kõigele perspektiivi, näidates, et maailm on piirideta ja ootab avastamist. Usun siiralt, et parim versioon endast sünnib siis, kui sa ei jää paigale, vaid otsid pidevalt uusi väljakutseid.");
 
   return (
     <ThemeProvider
@@ -47,14 +47,11 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="w-full">
-                    <div className="bg-[var(--card)] p-6 rounded-lg shadow-sm border border-[var(--accent)]">
-                        <label className="block text-lg font-semibold mb-4">Minu elulugu</label>
-                        <textarea 
-                            value={bio} 
-                            onChange={(e) => setBio(e.target.value)} 
-                            placeholder="Kirjuta siia oma biograafia..."
-                            className="w-full p-4 rounded-lg border bg-[var(--background)] min-h-[300px] resize-none overflow-hidden"
-                        />
+                    <div className="bg-[var(--card)] p-8 rounded-2xl shadow-md border border-[var(--accent)]">
+                        <h2 className="text-2xl font-semibold mb-6">Biograafia</h2>
+                        <p className="text-lg leading-relaxed text-[var(--foreground)] opacity-90">
+                            {bio}
+                        </p>
                     </div>
                 </div>
             </div>
