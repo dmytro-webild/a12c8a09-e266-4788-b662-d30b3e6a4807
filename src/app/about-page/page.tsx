@@ -2,10 +2,9 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
-import { User } from "lucide-react";
-import TeamCardTen from '@/components/sections/team/TeamCardTen';
+import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import FooterMedia from '@/components/sections/footer/FooterMedia';
+import TeamCardSix from '@/components/sections/team/TeamCardSix';
 
 export default function AboutPage() {
   return (
@@ -22,34 +21,37 @@ export default function AboutPage() {
         headingFontWeight="bold"
     >
       <ReactLenis root>
-        <NavbarStyleFullscreen
-          navItems={[
-            { name: "Home", id: "/" },
-            { name: "Minu kohta", id: "/about-page" },
-            { name: "Projects", id: "/projects" },
-            { name: "Contact", id: "/contact" },
-          ]}
-          brandName="Lazar Uleksin"
-        />
+        <div id="nav" data-section="nav">
+          <NavbarLayoutFloatingOverlay
+            navItems={[
+              { name: "Home", id: "/" },
+              { name: "Minu kohta", id: "/about-page" },
+              { name: "Projects", id: "/projects" },
+              { name: "Contact", id: "/contact" },
+            ]}
+            brandName="Lazar Uleksin"
+          />
+        </div>
 
         <div id="about-content" data-section="about-content" className="pt-24">
-          <TeamCardTen
+          <TeamCardSix
             title="Minu teekond ja areng"
-            tag="Biograafia"
-            memberVariant="card"
-            membersAnimation="blur-reveal"
+            description="Biograafia"
             members={[
               {
-                id: "1",                name: "Lazar Uleksin",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2",                imageAlt: "Lazar Uleksin portree"
+                id: "1",                name: "Lazar Uleksin",                role: "Portree",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2",                imageAlt: "Lazar Uleksin portree"
               }
             ]}
+            gridVariant="uniform-all-items-equal"
+            animationType="blur-reveal"
+            textboxLayout="default"
             useInvertedBackground={false}
             textBoxClassName="flex-[1.5]"
           />
         </div>
 
         <div id="footer" data-section="footer">
-          <FooterBaseReveal
+          <FooterMedia
             logoText="Lazar Uleksin"
             columns={[
               { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
