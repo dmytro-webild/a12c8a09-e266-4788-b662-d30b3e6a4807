@@ -8,6 +8,7 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import TextBox from '@/components/Textbox';
 
 export default function LandingPage() {
   return (
@@ -81,6 +82,23 @@ export default function LandingPage() {
         { id: "p6", title: "Reisimine ", description: "Tutvu koos minuga veidike riikidest ", tag: "36 riiki ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778672237771-31zfv4kh.jpg" }
       ]}
     />
+    <div className="grid gap-8 p-8">
+        <TextBox 
+            textboxLayout="split" 
+            title="Reisimine"
+            description="Reisimine on avardanud minu silmaringi ja õpetanud hindama erinevaid kultuure."
+        />
+        <TextBox 
+            textboxLayout="split" 
+            title="Meedia"
+            description="Loov ja strateegiline lähenemine digitaalsetele platvormidele ja visuaalsele kommunikatsioonile."
+        />
+        <TextBox 
+            textboxLayout="split" 
+            title="Disain"
+            description="Esteetiline ja kasutajakeskne disainilahenduste loomine igapäevaste väljakutsete lahendamiseks."
+        />
+    </div>
   </div>
 
   <div id="contact" data-section="contact">
