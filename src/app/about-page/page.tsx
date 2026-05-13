@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import TeamCardSix from '@/components/sections/team/TeamCardSix';
+import SplitAbout from '@/components/sections/about/SplitAbout';
 import Textarea from '@/components/form/Textarea';
 
 export default function AboutPage() {
@@ -38,19 +38,16 @@ export default function AboutPage() {
         </div>
 
         <div id="about-content" data-section="about-content" className="pt-24">
-          <TeamCardSix
+          <SplitAbout
             title="Minu teekond ja areng"
-            description="Biograafia"
-            members={[
-              {
-                id: "1",                name: "Lazar Uleksin",                role: "Portree",                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2",                imageAlt: "Lazar Uleksin portree"
-              }
-            ]}
-            gridVariant="uniform-all-items-equal"
-            animationType="blur-reveal"
-            textboxLayout="default"
+            description="18-aastane Tallinnast, kes ei suuda paigal istuda. Leian end kas tantsusaalist, jalgpalliväljakult või kuskil maailma teises otsas kaamera käes. Tants on andnud mulle distsipliini, jalgpall meeskonnavaimu ja reisimine perspektiivi — et maailm on palju suurem kui see, mida me ette kujutame. Usun, et parim versioon sinust sünnib siis, kui sa ei lõpeta liikumast."
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
+            imageAlt="Lazar Uleksin portree"
+            imagePosition="left"
+            textboxLayout="split"
             useInvertedBackground={false}
-            textBoxClassName="flex-[1.5]"
+            mediaAnimation="slide-up"
+            bulletPoints={[]}
           />
           
           <div className="px-[var(--vw-1_5)] py-12 max-w-[var(--width-content-width)] mx-auto">
