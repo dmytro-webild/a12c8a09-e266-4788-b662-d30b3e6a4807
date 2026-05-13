@@ -28,7 +28,7 @@ export default function ProjectsPage() {
         defaultButtonVariant="bounce-effect"
         defaultTextAnimation="entrance-slide"
         borderRadius="soft"
-        contentWidth="compact"
+        contentWidth="mediumLarge"
         sizing="mediumLarge"
         background="noiseDiagonalGradient"
         cardStyle="subtle-shadow"
@@ -50,23 +50,26 @@ export default function ProjectsPage() {
         </div>
 
         <div id="projects" data-section="projects" className="pt-24 pb-24 px-[var(--vw-1_5)] max-w-[var(--width-content-width)] mx-auto">
-          <h1 className="text-4xl font-bold mb-16 text-center">Projektide portfoolio</h1>
-          <div className="space-y-32">
+          <h1 className="text-5xl font-bold mb-16 text-center">Projektide portfoolio</h1>
+          <div className="space-y-40">
             {projects.map((project, index) => (
-              <div key={project.id} className="space-y-10">
-                <h2 className="text-4xl font-bold">{index + 1}. {project.title}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div key={project.id} className="space-y-12">
+                <h2 className="text-4xl font-bold border-b border-[var(--accent)] pb-6">{index + 1}. {project.title}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {project.images.map((src, i) => (
-                        <img key={i} src={src} alt={project.title} className="w-full aspect-video object-cover rounded-2xl shadow-xl border border-[var(--accent)]" />
+                        <div key={i} className="relative overflow-hidden rounded-3xl">
+                            <img src={src} alt={project.title} className="w-full aspect-[4/3] object-cover transition-transform duration-500 hover:scale-105" />
+                        </div>
                     ))}
                 </div>
-                <div className="bg-[var(--card)] p-12 rounded-3xl border border-[var(--accent)]">
-                    <p className="text-xl mb-10 leading-relaxed opacity-90">{project.description}</p>
+                <div className="bg-[var(--card)] p-16 rounded-3xl border border-[var(--accent)] shadow-2xl">
+                    <p className="text-2xl mb-12 leading-relaxed opacity-95">{project.description}</p>
                     <Textarea
                       value={reasonings[project.id] || ""}
                       onChange={(val) => handleReasoningChange(project.id, val)}
                       placeholder="Lisa siia detailne kirjeldus sellest projektist..."
-                      rows={8}
+                      rows={12}
+                      className="text-lg p-6 bg-transparent border border-[var(--accent)] rounded-xl focus:ring-2 focus:ring-[var(--primary-cta)]"
                     />
                 </div>
               </div>
