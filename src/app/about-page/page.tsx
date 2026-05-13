@@ -7,7 +7,7 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 export default function AboutPage() {
-  const [bio, setBio] = useState("Minu elu on olnud täis sporti, pühendumist ja pidevat enesearengut. Olen 18-aastane noor Tallinnast, kes leiab inspiratsiooni liikumisest — olgu selleks siis tantsusaal, jalgpalliväljak või kaamera taga maailma avastamine. Minu jaoks on sport midagi palju enamat kui lihtsalt füüsiline tegevus; see on distsipliini kool, mis on õpetanud mind olema kannatlik, meeskonnale orienteeritud ja eesmärgikindel. Reisimine on lisanud sellele kõigele perspektiivi, näidates, et maailm on piirideta ja ootab avastamist. Usun siiralt, et parim versioon endast sünnib siis, kui sa ei jää paigale, vaid otsid pidevalt uusi väljakutseid. Olen alati püüdnud hoida fookust oma eesmärkidel, olgu nendeks siis treeningute intensiivsus või loomingulised projektid. Minu tööeetika on kujunenud aastatepikkuse järjepideva töö tulemusena, kus ma olen õppinud hindama nii väikeseid võite kui ka õppetunde, mis tulevad läbi ebaõnnestumiste. Inimeste ümber olemine ja nendega suhtlemine on andnud mulle väärtusliku pagasi oskusi, mida saan kasutada igas eluvaldkonnas. Tulevikku vaadates soovin ma jätkuvalt areneda ja jätta endast maha midagi positiivset, olgu see siis läbi spordi, meedia või lihtsa inimliku kontakti. Olen avatud igale uuele võimalusele ja valmis endast andma 100 protsenti, et saavutada oma potentsiaali. Mu kirg on alati olnud seotud uudishimuga — tahan teada, kuidas asjad töötavad, ja proovida uusi meetodeid, et muuta oma igapäevaelu efektiivsemaks ja inspireerivamaks.");
+  const [bio] = useState("Minu elu on olnud täis sporti, arengut, loomingulisust ja uusi kogemusi. Sündisin 14. juunil Tallinnas ning olen terve oma elu elanud ja õppinud Kiilis. Minu lapsepõlv möödus Kiili Gümnaasium seinte vahel ning enne kooliteed käisin ka Kiili lasteaias. Kiili on olnud koht, kus olen kasvanud, õppinud ja kujunenud inimeseks, kes ma täna olen. Juba noorest east alates mängis sport minu elus väga olulist rolli. Kõige suuremaks kireks kujunes võistlustants, millega tegelesin üle kümne aasta. See ala õpetas mulle distsipliini, kannatlikkust ja sihikindlust. Pikkade treeningute ja raske töö tulemusena õnnestus mul mitmel korral jõuda Eesti meistrivõistlustel poodiumile. Need saavutused andsid mulle motivatsiooni pingutada alati rohkem ning uskuda iseendasse ka keerulistel hetkedel. Lisaks tantsule on mulle alati meeldinud ka meeskonnasport. Koos sõpradega lõime jalgpalliklubi FC Mis Vennad, kus mängisime koos Kiili poistega. See ei olnud ainult sportlik tegevus, vaid ka võimalus tugevdada sõprussuhteid ja õppida meeskonnatöö tähtsust. Jalgpall õpetas mulle, kui oluline on üksteise toetamine ja ühise eesmärgi nimel töötamine. Praegu töötan Decathlonis, kus tegelen klienditeenindusega. See töö on andnud mulle palju uusi kogemusi ning õpetanud suhtlema erinevate inimestega. Mulle meeldib pakkuda klientidele meeldivat teenindust ja aidata neil leida just see, mida nad vajavad. Töö kõrvalt mõtlen palju ka oma tulevikule. Soovin saada inimeseks, kes on loov, ettevõtlik ja majanduslikult tark. Usun, et edu saavutamiseks on vaja pidevalt õppida, areneda ja julgeda proovida uusi asju. Üheks minu suurimaks huviks on reisimine. Olen käinud juba 36 riigis ning iga reis on andnud mulle uusi teadmisi ja kogemusi. Reisimine on õpetanud mulle erinevaid kultuure mõistma ning maailma avarama pilguga vaatama. Mulle meeldib avastada uusi kohti, kohtuda erinevate inimestega ja kogeda midagi täiesti uut. Minu lemmik kooliväline hobi on fotograafia. Mulle meeldib jäädvustada hetki, emotsioone ja erilisi vaateid. Fotograafia annab mulle võimaluse väljendada oma loomingulisust ning näha maailma teise nurga alt. Samuti huvitab mind mood ja erinevad riidebrändid. Minu jaoks ei ole mood ainult riided, vaid viis ennast väljendada ja oma isikupära näidata.");
 
   return (
     <ThemeProvider
@@ -37,19 +37,18 @@ export default function AboutPage() {
 
         <div id="about-content" data-section="about-content" className="pt-24">
           <div className="px-[var(--vw-1_5)] py-12 max-w-[var(--width-content-width)] mx-auto">
-            <h1 className="text-5xl font-bold mb-8">Minu kohta</h1>
-            <div className="grid md:grid-cols-1 gap-12 items-start">
+            <h1 className="text-5xl font-bold mb-12">Minu kohta</h1>
+            <div className="grid md:grid-cols-2 gap-12 items-start">
                 <div className="w-full">
                   <img 
                       src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg" 
                       alt="Lazar Uleksin portree" 
-                      className="w-full h-auto rounded-lg shadow-lg"
+                      className="w-full h-auto rounded-2xl shadow-xl sticky top-24"
                   />
                 </div>
                 <div className="w-full">
-                    <div className="bg-[var(--card)] p-12 rounded-2xl shadow-md border border-[var(--accent)]">
-                        <h2 className="text-2xl font-semibold mb-6">Biograafia</h2>
-                        <p className="text-lg leading-relaxed text-[var(--foreground)] opacity-90">
+                    <div className="bg-[var(--card)] p-8 md:p-12 rounded-3xl shadow-lg border border-[var(--accent)]">
+                        <p className="text-lg leading-relaxed text-[var(--foreground)] opacity-95 whitespace-pre-wrap">
                             {bio}
                         </p>
                     </div>
