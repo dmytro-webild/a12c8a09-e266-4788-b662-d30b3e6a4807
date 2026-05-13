@@ -54,7 +54,7 @@ export default function LandingPage() {
       title="Minust ja minu teekonnast"
       description='"Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu.  Reisimine on avanud mulle maailma'
       metrics={[
-        { value: "18 ", title: "Aastat tantsukogemust" },
+        { value: "18 ", title: "Minu vanus" },
         { value: "Lõputu", title: "Sihikindlus" },
         { value: "Suurepärane", title: "Suhtlemisoskus" },
       ]}
