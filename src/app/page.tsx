@@ -91,7 +91,8 @@ export default function LandingPage() {
       description="Olen avatud uutele väljakutsetele ja tööpakkumistele."
       mediaAnimation="slide-up"
       mediaPosition="right"
-      imageSrc="https://img.b2bpic.net/free-photo/portrait-stylish-handsome-young-man-looking-camera-leaning-grey-wall_23-2148130416.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=1"
+      imageAlt="Klienditeenindus"
       termsText="By clicking Sign Up you are confirming that you agree with our Terms and Conditions."
     />
   </div>
