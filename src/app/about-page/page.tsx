@@ -53,6 +53,7 @@ export default function AboutPage() {
         <div id="footer" data-section="footer">
           <FooterMedia
             logoText="Lazar Uleksin"
+            videoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/assets/default-footer-video.mp4"
             columns={[
               { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
               { title: "Navigatsioon", items: [{ label: "Kodu", href: "/" }, { label: "Minu kohta", href: "/about-page" }, { label: "Kontakt", href: "/contact" }] },
