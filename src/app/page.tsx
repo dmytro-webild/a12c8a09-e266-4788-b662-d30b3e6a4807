@@ -40,7 +40,7 @@ export default function LandingPage() {
       <HeroSplit
       background={{ variant: "gradient-bars" }}
       title="Lazar Uleksin"
-      description="&quot;Discipline is doing it even when you don't feel like it.&quot;"
+      description="\"Discipline is doing it even when you don't feel like it.\""
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
       imageAlt="Lazar Uleksin headshot"
       mediaAnimation="slide-up"
@@ -52,7 +52,7 @@ export default function LandingPage() {
       <MetricSplitMediaAbout
       useInvertedBackground={false}
       title="Minust ja minu teekonnast"
-      description='"Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu.  Reisimine on avanud mulle maailma'
+      description='\"Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu. Reisimine on avanud mulle maailma'
       metrics={[
         { value: "18 ", title: "Minu vanus" },
         { value: "Tallinn ", title: "Asukoht " },
