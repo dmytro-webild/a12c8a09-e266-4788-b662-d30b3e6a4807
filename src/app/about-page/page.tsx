@@ -36,8 +36,7 @@ export default function AboutPage() {
           <TestimonialAboutCard
             tag="Biograafia"
             title="Minu teekond ja areng"
-            description="Olen 18-aastane noormees Tallinnast, kelle kirg elus on pidev liikumine ja enesearendamine. Olgu see tantsupõrandal, jalgpalliväljakul või uusi riike avastades — ma usun, et kõige väärtuslikumad õppetunnid tulevad väljaspool mugavustsooni. Olen pühendunud tipptasemel klienditeenindusele ja pidevale uute oskuste omandamisele, mis aitavad mul kasvada nii isiklikult kui professionaalselt."
-            subdescription="Minu eesmärk on ühendada loovus, distsipliin ja meeskonnatöö, et luua väärtust igas ettevõtmises, mida ette võtan. See teekond on alles algus ning ootan põnevusega uusi väljakutseid, mis aitavad mul rakendada kõike seda, mida olen siiani õppinud."
+            description="Olen 18-aastane noormees Tallinnast, kelle kirg elus on pidev liikumine ja enesearendamine. Olgu see tantsupõrandal, jalgpalliväljakul või uusi riike avastades — ma usun, et kõige väärtuslikumad õppetunnid tulevad väljaspool mugavustsooni. Olen pühendunud tipptasemel klienditeenindusele ja pidevale uute oskuste omandamisele, mis aitavad mul kasvada nii isiklikult kui professionaalselt.\n\nMinu eesmärk on ühendada loovus, distsipliin ja meeskonnatöö, et luua väärtust igas ettevõtmises, mida ette võtan. See teekond on alles algus ning ootan põnevusega uusi väljakutseid, mis aitavad mul rakendada kõike seda, mida olen siiani õppinud. Usun kindlalt, et pidev eneseareng ja avatud meel avavad uksi, millest ma poleks osanud undki näha. Iga kogemus, olgu see suur või väike, kujundab minu iseloomu ja valmistab mind ette tuleviku võimalusteks."
             icon={User}
             imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
             useInvertedBackground={false}
