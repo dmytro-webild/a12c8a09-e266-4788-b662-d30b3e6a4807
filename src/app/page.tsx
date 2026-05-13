@@ -52,7 +52,7 @@ export default function LandingPage() {
       <MetricSplitMediaAbout
       useInvertedBackground={false}
       title="Minust ja minu teekonnast"
-      description="Olen 18-aastane Tallinnast, kes on leidnud oma kirg tantsu, jalgpalli ja fotograafia kaudu. Reisimine on avanud mulle maailma"
+      description="18-aastane Tallinnast, kes ei suuda paigal istuda. Leian end kas tantsusaalist, jalgpalliväljakult või kuskil maailma teises otsas kaamera käes. Tants on andnud mulle distsipliini, jalgpall meeskonnavaimu ja reisimine perspektiivi — et maailm on palju suurem kui see, mida me ette kujutame. Usun, et parim versioon sinust sünnib siis, kui sa ei lõpeta liikumast."
       metrics={[
         { value: "18 ", title: "Minu vanus" },
         { value: "Tallinn ", title: "Asukoht " },
