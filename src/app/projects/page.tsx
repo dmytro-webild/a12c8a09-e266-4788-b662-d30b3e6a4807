@@ -9,7 +9,9 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import Textarea from '@/components/form/Textarea';
 
 export default function ProjectsPage() {
-  const [reasonings, setReasonings] = useState<Record<string, string>>({});
+  const [reasonings, setReasonings] = useState<Record<string, string>>({ 
+    "p1": "FC Mis Vennad sündis meie soovist luua midagi enamat kui lihtsalt vabaaja jalgpallitiim. Meie esimene ametlik matš toimus 2024. aastal, mis tähistas olulist verstaposti meie klubi ajaloos. Olen panustanud klubi visuaalsesse identiteeti, luues disainilahendusi ja hallates meie sotsiaalmeediakanaleid, et kasvatada kogukonda. Mängides ise ründaja positsioonil, olen kogenud jalgpalli läbi kõige vahetuma perspektiivi – väravate ja vastutuse, mis sellega kaasneb."
+  });
   const [activeIndices, setActiveIndices] = useState<Record<string, number>>({});
 
   const handleReasoningChange = (id: string, value: string) => {
