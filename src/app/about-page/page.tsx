@@ -40,7 +40,7 @@ export default function AboutPage() {
             buttons={[
               { text: "Laadi alla minu CV", href: "/cv.pdf" }
             ]}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg"
+            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2"
             useInvertedBackground={false}
           />
         </div>
