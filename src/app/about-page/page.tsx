@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
-import Textarea from '@/components/form/Textarea';
 
 export default function AboutPage() {
   const [bio, setBio] = useState("");
@@ -50,12 +49,11 @@ export default function AboutPage() {
                 <div className="w-full">
                     <div className="bg-[var(--card)] p-6 rounded-lg shadow-sm border border-[var(--accent)]">
                         <label className="block text-lg font-semibold mb-4">Minu elulugu</label>
-                        <Textarea 
+                        <textarea 
                             value={bio} 
-                            onChange={setBio} 
+                            onChange={(e) => setBio(e.target.value)} 
                             placeholder="Kirjuta siia oma biograafia..."
-                            rows={15}
-                            className="w-full p-4 rounded-lg border bg-[var(--background)]"
+                            className="w-full p-4 rounded-lg border bg-[var(--background)] min-h-[300px] resize-none overflow-hidden"
                         />
                     </div>
                 </div>
