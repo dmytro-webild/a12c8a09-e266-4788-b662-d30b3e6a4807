@@ -1,12 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 import TeamCardSix from '@/components/sections/team/TeamCardSix';
+import Textarea from '@/components/form/Textarea';
 
 export default function AboutPage() {
+  const [bio, setBio] = useState("");
+
   return (
     <ThemeProvider
         defaultButtonVariant="bounce-effect"
@@ -48,6 +52,17 @@ export default function AboutPage() {
             useInvertedBackground={false}
             textBoxClassName="flex-[1.5]"
           />
+          
+          <div className="px-[var(--vw-1_5)] py-12 max-w-[var(--width-content-width)] mx-auto">
+            <label className="block text-lg font-semibold mb-4">Minu pikem tutvustus</label>
+            <Textarea 
+              value={bio} 
+              onChange={setBio} 
+              placeholder="Kirjuta siia oma pikem tutvustus..."
+              rows={10}
+              className="w-full p-4 rounded-lg border"
+            />
+          </div>
         </div>
 
         <div id="footer" data-section="footer">
