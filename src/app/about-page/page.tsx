@@ -7,7 +7,7 @@ import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatin
 import FooterMedia from '@/components/sections/footer/FooterMedia';
 
 export default function AboutPage() {
-  const [bio, setBio] = useState("Minu elu on olnud täis sporti, pühendumist ja pidevat enesearengut. Olen 18-aastane noor Tallinnast, kes leiab inspiratsiooni liikumisest — olgu selleks siis tantsusaal, jalgpalliväljak või kaamera taga maailma avastamine. Minu jaoks on sport midagi palju enamat kui lihtsalt füüsiline tegevus; see on distsipliini kool, mis on õpetanud mind olema kannatlik, meeskonnale orienteeritud ja eesmärgikindel. Reisimine on lisanud sellele kõigele perspektiivi, näidates, et maailm on piirideta ja ootab avastamist. Usun siiralt, et parim versioon endast sünnib siis, kui sa ei jää paigale, vaid otsid pidevalt uusi väljakutseid.");
+  const [bio, setBio] = useState("Minu elu on olnud täis sporti, pühendumist ja pidevat enesearengut. Olen 18-aastane noor Tallinnast, kes leiab inspiratsiooni liikumisest — olgu selleks siis tantsusaal, jalgpalliväljak või kaamera taga maailma avastamine. Minu jaoks on sport midagi palju enamat kui lihtsalt füüsiline tegevus; see on distsipliini kool, mis on õpetanud mind olema kannatlik, meeskonnale orienteeritud ja eesmärgikindel. Reisimine on lisanud sellele kõigele perspektiivi, näidates, et maailm on piirideta ja ootab avastamist. Usun siiralt, et parim versioon endast sünnib siis, kui sa ei jää paigale, vaid otsid pidevalt uusi väljakutseid. Olen alati püüdnud hoida fookust oma eesmärkidel, olgu nendeks siis treeningute intensiivsus või loomingulised projektid. Minu tööeetika on kujunenud aastatepikkuse järjepideva töö tulemusena, kus ma olen õppinud hindama nii väikeseid võite kui ka õppetunde, mis tulevad läbi ebaõnnestumiste. Inimeste ümber olemine ja nendega suhtlemine on andnud mulle väärtusliku pagasi oskusi, mida saan kasutada igas eluvaldkonnas. Tulevikku vaadates soovin ma jätkuvalt areneda ja jätta endast maha midagi positiivset, olgu see siis läbi spordi, meedia või lihtsa inimliku kontakti. Olen avatud igale uuele võimalusele ja valmis endast andma 100 protsenti, et saavutada oma potentsiaali. Mu kirg on alati olnud seotud uudishimuga — tahan teada, kuidas asjad töötavad, ja proovida uusi meetodeid, et muuta oma igapäevaelu efektiivsemaks ja inspireerivamaks.");
 
   return (
     <ThemeProvider
@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div id="about-content" data-section="about-content" className="pt-24">
           <div className="px-[var(--vw-1_5)] py-12 max-w-[var(--width-content-width)] mx-auto">
             <h1 className="text-5xl font-bold mb-8">Minu kohta</h1>
-            <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="grid md:grid-cols-1 gap-12 items-start">
                 <div className="w-full">
                   <img 
                       src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg" 
@@ -47,7 +47,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <div className="w-full">
-                    <div className="bg-[var(--card)] p-8 rounded-2xl shadow-md border border-[var(--accent)]">
+                    <div className="bg-[var(--card)] p-12 rounded-2xl shadow-md border border-[var(--accent)]">
                         <h2 className="text-2xl font-semibold mb-6">Biograafia</h2>
                         <p className="text-lg leading-relaxed text-[var(--foreground)] opacity-90">
                             {bio}
