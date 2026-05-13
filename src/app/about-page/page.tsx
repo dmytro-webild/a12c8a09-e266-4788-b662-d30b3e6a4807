@@ -42,7 +42,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-12 items-start">
                 <div className="w-full">
                   <img 
-                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=2" 
+                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg" 
                       alt="Lazar Uleksin portree" 
                       className="w-full h-auto rounded-lg shadow-lg"
                   />
