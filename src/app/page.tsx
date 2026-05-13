@@ -57,6 +57,10 @@ export default function LandingPage() {
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg"
       mediaAnimation="slide-up"
       imageAlt="dance studio action shot"
+      bulletPoints={[
+        { title: "Tantsukunst", description: "Pikaajaline kogemus võistlustantsus ja esinemistegevuses." },
+        { title: "Fotograafia", description: "Visuaalne maailmavaade ja projektide dokumenteerimine." }
+      ]}
     />
   </div>
 
