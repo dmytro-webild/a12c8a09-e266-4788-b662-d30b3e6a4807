@@ -9,7 +9,7 @@ import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import { Instagram, Mail, Video } from 'lucide-react';
+import { Linkedin, Instagram, Mail } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -121,7 +121,7 @@ export default function LandingPage() {
       <FooterCard
         logoText="Lazar Uleksin"
         socialLinks={[
-            { icon: Video, href: "https://www.tiktok.com/@lassu51?_r=1&_t=ZN-96Nws0ANlf4", ariaLabel: "TikTok" },
+            { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
             { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" },
             { icon: Mail, href: "mailto:uleksinlazar@gmail.com", ariaLabel: "Email" }
         ]}
