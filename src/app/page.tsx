@@ -92,6 +92,8 @@ export default function LandingPage() {
       faqsAnimation="slide-up"
       textboxLayout="split"
       useInvertedBackground={false}
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg"
+      imageAlt="Lazar Uleksin"
       faqs={[
         { id: "f1", title: "Kuidas sa oma aega planeerid?", content: "Tasakaalustamine spordi, töö ja õppimise vahel nõuab head ajaplaneerimist ja distsipliini." },
         { id: "f2", title: "Millised on sinu tulevikuplaanid?", content: "Soovin edasi areneda loovuse, ettevõtlikkuse ja majandusliku tarkuse vallas." },
