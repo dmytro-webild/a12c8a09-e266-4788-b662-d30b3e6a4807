@@ -3,8 +3,9 @@
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterCard from '@/components/sections/footer/FooterCard';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
+import { Linkedin, Instagram } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -49,11 +50,11 @@ export default function ContactPage() {
         </div>
 
         <div id="footer" data-section="footer">
-          <FooterBaseReveal
+          <FooterCard
             logoText="Lazar Uleksin"
-            columns={[
-              { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
-              { title: "Navigatsioon", items: [{ label: "Kodu", href: "/" }, { label: "Minu kohta", href: "/about-page" }, { label: "Projektide detailne kirjeldus", href: "/projects" }, { label: "Võta ühendust", href: "/contact" }] },
+            socialLinks={[
+                { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
+                { icon: Instagram, href: "#", ariaLabel: "Instagram" }
             ]}
           />
         </div>
