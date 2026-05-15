@@ -30,7 +30,7 @@ export default function LandingPage() {
       <NavbarStyleFullscreen
       navItems={[
         { name: "Kodu", id: "/" },
-        { name: "Minu taust ja huvid", id: "/about-page" },
+        { name: "Minu kohta", id: "/about-page" },
         { name: "Projektide detailne kirjeldus", id: "/projects" },
         { name: "Võta ühendust", id: "/contact" },
       ]}
