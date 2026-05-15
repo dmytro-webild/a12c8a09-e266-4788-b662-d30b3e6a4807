@@ -122,7 +122,7 @@ export default function LandingPage() {
         logoText="Lazar Uleksin"
         socialLinks={[
             { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
-            { icon: Instagram, href: "#", ariaLabel: "Instagram" },
+            { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" },
             { icon: Mail, href: "mailto:uleksinlazar@gmail.com", ariaLabel: "Email" }
         ]}
       />
