@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Linkedin, Instagram, Mail } from 'lucide-react';
+import { Instagram, Mail, Video } from 'lucide-react';
 
 export default function AboutPage() {
   const [bio] = useState("Minu elu on olnud täis sporti, arengut, loomingulisust ja uusi kogemusi. Sündisin 14. juunil Tallinnas ning olen terve oma elu elanud ja õppinud Kiilis. Minu lapsepõlv möödus Kiili Gümnaasium seinte vahel ning enne kooliteed käisin ka Kiili lasteaias. Kiili on olnud koht, kus olen kasvanud, õppinud ja kujunenud inimeseks, kes ma täna olen.\n\nJuba noorest east alates mängis sport minu elus väga olulist rolli. Kõige suuremaks kireks kujunes võistlustants, millega tegelesin üle kümne aasta. See ala õpetas mulle distsipliini, kannatlikkust ja sihikindlust. Pikkade treeningute ja raske töö tulemusena õnnestus mul mitmel korral jõuda Eesti meistrivõistlustel poodiumile.\n\nLisaks tantsule on mulle alati meeldinud ka meeskonnasport. Koos sõpradega lõime jalgpalliklubi FC Mis Vennad, kus mängisime koos Kiili poistega. See ei olnud ainult sportlik tegevus, vaid ka võimalus tugevdada sõprussuhteid ja õppida meeskonnatöö tähtsust. Jalgpall õpetas mulle, kui oluline on üksteise toetamine ja ühise eesmärgi nimel töötamine.\n\nPraegu töötan Decathlonis, kus tegelen klienditeenindusega. See töö on andnud mulle palju uusi kogemusi ning õpetanud suhtlema erinevate inimestega. Töö kõrvalt mõtlen palju ka oma tulevikule. Soovin saada inimeseks, kes on loov, ettevõtlik ja majanduslikult tark. Usun, et edu saavutamiseks on vaja pidevalt õppida, areneda ja julgeda proovida uusi asju.\n\nÜheks minu suurimaks huviks on reisimine. Olen käinud juba 36 riigis ning iga reis on andnud mulle uusi teadmisi ja kogemusi. Reisimine on õpetanud mulle erinevaid kultuure mõistma ning maailma avarama pilguga vaatama. Mulle meeldib avastada uusi kohti, kohtuda erinevate inimestega ja kogeda midagi täiesti uut.\n\nMinu lemmik kooliväline hobi on fotograafia. Mulle meeldib jäädvustada hetki, emotsioone ja erilisi vaateid. Fotograafia annab mulle võimaluse väljendada oma loomingulisust ning näha maailma teise nurga alt. Samuti huvitab mind mood ja erinevad riidebrändid. Minu jaoks ei ole mood ainult riided, vaid viis ennast väljendada ja oma isikupära näidata.");
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <FooterCard
             logoText="Lazar Uleksin"
             socialLinks={[
-                { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
+                { icon: Video, href: "https://www.tiktok.com/@lassu51?_r=1&_t=ZN-96Nws0ANlf4", ariaLabel: "TikTok" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" },
                 { icon: Mail, href: "mailto:uleksinlazar@gmail.com", ariaLabel: "Email" }
             ]}
