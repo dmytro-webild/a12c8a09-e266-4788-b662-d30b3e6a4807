@@ -70,7 +70,7 @@ export default function ProjectsPage() {
                 </div>
                 <div className="bg-[var(--card)] p-4 rounded-3xl border border-[var(--accent)] shadow-2xl">
                     <Textarea
-                      value={reasonings[project.id] || ""}
+                      value={reasonings[project.id]}
                       onChange={(val) => handleReasoningChange(project.id, val)}
                       placeholder="Lisa siia detailne kirjeldus..."
                       rows={15}
