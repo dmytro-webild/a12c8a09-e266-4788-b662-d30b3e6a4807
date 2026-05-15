@@ -29,7 +29,7 @@ export default function AboutPage() {
               { name: "Home", id: "/" },
               { name: "Minu kohta", id: "/about-page" },
               { name: "Projektide detailne kirjeldus", id: "/projects" },
-              { name: "Contact", id: "/contact" },
+              { name: "Võta ühendust", id: "/contact" },
             ]}
             brandName="Lazar Uleksin"
           />
@@ -63,7 +63,7 @@ export default function AboutPage() {
             videoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/assets/default-footer-video.mp4"
             columns={[
               { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
-              { title: "Navigatsioon", items: [{ label: "Kodu", href: "/" }, { label: "Minu kohta", href: "/about-page" }, { label: "Projektide detailne kirjeldus", href: "/projects" }, { label: "Kontakt", href: "/contact" }] },
+              { title: "Navigatsioon", items: [{ label: "Kodu", href: "/" }, { label: "Minu kohta", href: "/about-page" }, { label: "Projektide detailne kirjeldus", href: "/projects" }, { label: "Võta ühendust", href: "/contact" }] },
             ]}
           />
         </div>
