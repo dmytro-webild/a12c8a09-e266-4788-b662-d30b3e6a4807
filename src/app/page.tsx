@@ -29,7 +29,7 @@ export default function LandingPage() {
   <div id="nav" data-section="nav">
       <NavbarStyleFullscreen
       navItems={[
-        { name: "Kodu", id: "/" },
+        { name: "Home", id: "/" },
         { name: "Minu kohta", id: "/about-page" },
         { name: "Projektide detailne kirjeldus", id: "/projects" },
         { name: "Võta ühendust", id: "/contact" },
