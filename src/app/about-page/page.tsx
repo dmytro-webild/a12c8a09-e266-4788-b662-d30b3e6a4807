@@ -28,7 +28,7 @@ export default function AboutPage() {
           <NavbarStyleFullscreen
             navItems={[
               { name: "Kodu", id: "/" },
-              { name: "Minu taust ja huvid", id: "/about-page" },
+              { name: "Minu kohta", id: "/about-page" },
               { name: "Projektide detailne kirjeldus", id: "/projects" },
               { name: "Võta ühendust", id: "/contact" },
             ]}
@@ -38,7 +38,7 @@ export default function AboutPage() {
 
         <div id="about-content" data-section="about-content" className="pt-24">
           <div className="px-[var(--vw-1_5)] py-12 max-w-[var(--width-content-width)] mx-auto">
-            <h1 className="text-5xl font-bold mb-12 text-center">Minu taust ja huvid</h1>
+            <h1 className="text-5xl font-bold mb-12 text-center">Minu kohta</h1>
             <div className="grid gap-12 items-start">
                 <div className="w-full max-w-xl mx-auto">
                   <img 
