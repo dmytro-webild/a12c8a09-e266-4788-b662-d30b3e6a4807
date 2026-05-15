@@ -7,7 +7,7 @@ import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
-import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
+import FaqDouble from '@/components/sections/faq/FaqDouble';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import { Linkedin, Instagram } from 'lucide-react';
 
@@ -86,14 +86,12 @@ export default function LandingPage() {
   </div>
 
   <div id="faq" data-section="faq">
-    <FaqSplitMedia
+    <FaqDouble
       title="Korduma kippuvad küsimused"
       description="Siin on vastused levinumatele küsimustele minu tegemiste ja tausta kohta."
       faqsAnimation="slide-up"
       textboxLayout="split"
       useInvertedBackground={false}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg"
-      imageAlt="Lazar Uleksin"
       faqs={[
         { id: "f1", title: "Kuidas sa oma aega planeerid?", content: "Tasakaalustamine spordi, töö ja õppimise vahel nõuab head ajaplaneerimist ja distsipliini." },
         { id: "f2", title: "Millised on sinu tulevikuplaanid?", content: "Soovin edasi areneda loovuse, ettevõtlikkuse ja majandusliku tarkuse vallas." },
