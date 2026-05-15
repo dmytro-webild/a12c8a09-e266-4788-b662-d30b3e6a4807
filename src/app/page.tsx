@@ -7,6 +7,7 @@ import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
+import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import { Linkedin, Instagram } from 'lucide-react';
 
@@ -80,6 +81,20 @@ export default function LandingPage() {
         { id: "p4", title: "Meedia ja Disaini suund", description: "Kiili Gümnaasiumi jooksul projektid", tag: "Elu", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=2" },
         { id: "p5", title: "Fotograafia", description: "...", tag: "Innovatsioon", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671911732-kjp1j0l4.jpg?_wi=1" },
         { id: "p6", title: "Reisimine", description: "Tutvu koos minuga veidike riikidest", tag: "Elu", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778672237771-31zfv4kh.jpg?_wi=1" }
+      ]}
+    />
+  </div>
+
+  <div id="faq" data-section="faq">
+    <FaqSplitMedia
+      title="Korduma kippuvad küsimused"
+      description="Siin on vastused levinumatele küsimustele minu tegemiste ja tausta kohta."
+      faqsAnimation="slide-up"
+      textboxLayout="split"
+      faqs={[
+        { id: "f1", title: "Kuidas sa oma aega planeerid?", content: "Tasakaalustamine spordi, töö ja õppimise vahel nõuab head ajaplaneerimist ja distsipliini." },
+        { id: "f2", title: "Millised on sinu tulevikuplaanid?", content: "Soovin edasi areneda loovuse, ettevõtlikkuse ja majandusliku tarkuse vallas." },
+        { id: "f3", title: "Kuidas alustada reisimisega?", content: "Alusta väikestest sihtkohtadest ja pane paika eelarve – reisimine avardab silmaringi." }
       ]}
     />
   </div>
