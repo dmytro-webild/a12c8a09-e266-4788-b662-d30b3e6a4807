@@ -95,7 +95,8 @@ export default function LandingPage() {
       faqs={[
         { id: "f1", title: "Kuidas sa oma aega planeerid?", content: "Tasakaalustamine spordi, töö ja õppimise vahel nõuab head ajaplaneerimist ja distsipliini." },
         { id: "f2", title: "Millised on sinu tulevikuplaanid?", content: "Soovin edasi areneda loovuse, ettevõtlikkuse ja majandusliku tarkuse vallas." },
-        { id: "f3", title: "Kuidas alustada reisimisega?", content: "Alusta väikestest sihtkohtadest ja pane paika eelarve – reisimine avardab silmaringi." }
+        { id: "f3", title: "Kuidas alustada reisimisega?", content: "Alusta väikestest sihtkohtadest ja pane paika eelarve – reisimine avardab silmaringi." },
+        { id: "f4", title: "Kas sa teed koostööd?", content: "Olen avatud huvitavatele projektidele ja koostööpakkumistele. Kirjuta mulle kontaktivormi kaudu!" }
       ]}
     />
   </div>
