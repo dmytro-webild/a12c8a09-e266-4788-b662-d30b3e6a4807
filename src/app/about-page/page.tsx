@@ -41,8 +41,8 @@ export default function AboutPage() {
             <div className="grid gap-12 items-start">
                 <div className="w-full max-w-xl mx-auto">
                   <img 
-                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg"
-                      alt="Lazar Uleksin portree"
+                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg" 
+                      alt="Lazar Uleksin portree" 
                       className="w-full h-auto rounded-2xl shadow-xl"
                   />
                 </div>
