@@ -4,10 +4,11 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
-import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
+import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import { Linkedin, Instagram } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -75,7 +76,9 @@ export default function LandingPage() {
       features={[
         { id: "p1", title: "Fc Mis Vennad ", description: "Rahvaliiga klubi loomine (Fc Mis Vennad).", tag: "Jalgpall", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png?_wi=1" },
         { id: "p2", title: "Võistlustants ", description: "Meeskonnatöö arendamine läbi spordi.", tag: "Tants", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg?_wi=1" },
-        { id: "p3", title: "Klienditeenindus", description: "Töötan hetkel Decathlon Tallinna ainsas poes, mis asub Kurna pargis ning on ühtlasi suurim Decathloni pood Baltikumis. Igapäevaselt töötan service-osakonnas, kus minu peamisteks ülesanneteks on töö kassades ja infolauas ning klientide probleemide lahendamine.\nSee töö sobib mulle väga hästi, sest naudin suhtlemist ja inimestega töötamist. Mulle meeldib aidata klientidel leida neile sobivaid tooteid ning tutvustada erinevaid lahendusi vastavalt nende vajadustele. Tänu sellele olen arendanud oma suhtlemisoskust, kiiret probleemilahendusvõimet ja oskust töötada pingelistes olukordades.\nHindan oma töö juures ka häid töötingimusi ja tugevat kollektiivi. Positiivne meeskond ning igapäevane suhtlus erinevate inimestega muudavad töö mitmekesiseks ja motiveerivaks.", tag: "Teenindus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671852101-8oq8hsvm.jpg?_wi=1" },
+        { id: "p3", title: "Klienditeenindus", description: "Töötan hetkel Decathlon Tallinna ainsas poes, mis asub Kurna pargis ning on ühtlasi suurim Decathloni pood Baltikumis. Igapäevaselt töötan service-osakonnas, kus minu peamisteks ülesanneteks on töö kassades ja infolauas ning klientide probleemide lahendamine.
+See töö sobib mulle väga hästi, sest naudin suhtlemist ja inimestega töötamist. Mulle meeldib aidata klientidel leida neile sobivaid tooteid ning tutvustada erinevaid lahendusi vastavalt nende vajadustele. Tänu sellele olen arendanud oma suhtlemisoskust, kiiret probleemilahendusvõimet ja oskust töötada pingelistes olukordades.
+Hindan oma töö juures ka häid töötingimusi ja tugevat kollektiivi. Positiivne meeskond ning igapäevane suhtlus erinevate inimestega muudavad töö mitmekesiseks ja motiveerivaks.", tag: "Teenindus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671852101-8oq8hsvm.jpg?_wi=1" },
         { id: "p4", title: "Meedia ja Disaini suund ", description: "Kiili Gümnaasiumi jooksul projektid ", tag: "Elu ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=2" },
         { id: "p5", title: "Fotograafia ", description: ".... ", tag: "Innovatsioon", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671911732-kjp1j0l4.jpg?_wi=1" },
         { id: "p6", title: "Reisimine ", description: "Tutvu koos minuga veidike riikidest ", tag: "Elu ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778672237771-31zfv4kh.jpg?_wi=1" }
@@ -99,13 +102,13 @@ export default function LandingPage() {
   </div>
 
   <div id="footer" data-section="footer">
-      <FooterBaseReveal
-      logoText="Lazar Uleksin"
-      columns={[
-        { title: "Sotsiaalmeedia", items: [{ label: "LinkedIn", href: "#" }, { label: "Instagram", href: "#" }] },
-        { title: "Navigatsioon", items: [{ label: "Kodu", href: "/" }, { label: "Minu kohta", href: "/about-page" }, { label: "Projektide detailne kirjeldus", href: "/projects" }, { label: "Võta ühendust", href: "/contact" }] },
-      ]}
-    />
+      <FooterCard
+        logoText="Lazar Uleksin"
+        socialLinks={[
+            { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
+            { icon: Instagram, href: "#", ariaLabel: "Instagram" }
+        ]}
+      />
   </div>
       </ReactLenis>
     </ThemeProvider>
