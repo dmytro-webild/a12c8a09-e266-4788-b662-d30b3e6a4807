@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import { Linkedin, Instagram, Mail } from 'lucide-react';
+import { Linkedin, Instagram } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -29,7 +29,6 @@ export default function ContactPage() {
               { name: "Minu taust ja huvid", id: "/about-page" },
               { name: "Projektide detailne kirjeldus", id: "/projects" },
               { name: "Võta ühendust", id: "/contact" },
-              { name: "uleksinlazar@gmail.com", id: "mailto:uleksinlazar@gmail.com" },
             ]}
             brandName="Lazar Uleksin"
           />
@@ -55,8 +54,7 @@ export default function ContactPage() {
             logoText="Lazar Uleksin"
             socialLinks={[
                 { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
-                { icon: Instagram, href: "#", ariaLabel: "Instagram" },
-                { icon: Mail, href: "mailto:uleksinlazar@gmail.com", ariaLabel: "Email" }
+                { icon: Instagram, href: "#", ariaLabel: "Instagram" }
             ]}
           />
         </div>
