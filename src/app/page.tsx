@@ -91,6 +91,7 @@ export default function LandingPage() {
       description="Siin on vastused levinumatele küsimustele minu tegemiste ja tausta kohta."
       faqsAnimation="slide-up"
       textboxLayout="split"
+      useInvertedBackground={false}
       faqs={[
         { id: "f1", title: "Kuidas sa oma aega planeerid?", content: "Tasakaalustamine spordi, töö ja õppimise vahel nõuab head ajaplaneerimist ja distsipliini." },
         { id: "f2", title: "Millised on sinu tulevikuplaanid?", content: "Soovin edasi areneda loovuse, ettevõtlikkuse ja majandusliku tarkuse vallas." },
