@@ -6,7 +6,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import Textarea from '@/components/form/Textarea';
-import { Linkedin, Instagram, Mail } from 'lucide-react';
+import { Instagram, Mail, Video } from 'lucide-react';
 
 export default function ProjectsPage() {
   const [reasonings, setReasonings] = useState<Record<string, string>>({ 
@@ -87,7 +87,7 @@ export default function ProjectsPage() {
             <FooterCard
             logoText="Lazar Uleksin"
             socialLinks={[
-                { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
+                { icon: Video, href: "https://www.tiktok.com/@lassu51?_r=1&_t=ZN-96Nws0ANlf4", ariaLabel: "TikTok" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" },
                 { icon: Mail, href: "mailto:uleksinlazar@gmail.com", ariaLabel: "Email" }
             ]}
