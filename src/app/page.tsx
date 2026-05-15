@@ -9,7 +9,7 @@ import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import { Linkedin, Instagram } from 'lucide-react';
+import { Linkedin, Instagram, Mail } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -33,6 +33,7 @@ export default function LandingPage() {
         { name: "Minu taust ja huvid", id: "/about-page" },
         { name: "Projektide detailne kirjeldus", id: "/projects" },
         { name: "Võta ühendust", id: "/contact" },
+        { name: "uleksinlazar@gmail.com", id: "mailto:uleksinlazar@gmail.com" },
       ]}
       brandName="Lazar Uleksin"
     />
@@ -121,7 +122,8 @@ export default function LandingPage() {
         logoText="Lazar Uleksin"
         socialLinks={[
             { icon: Linkedin, href: "#", ariaLabel: "LinkedIn" },
-            { icon: Instagram, href: "#", ariaLabel: "Instagram" }
+            { icon: Instagram, href: "#", ariaLabel: "Instagram" },
+            { icon: Mail, href: "mailto:uleksinlazar@gmail.com", ariaLabel: "Email" }
         ]}
       />
   </div>
