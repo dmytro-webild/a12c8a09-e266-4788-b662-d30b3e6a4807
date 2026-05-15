@@ -25,7 +25,7 @@ export default function ContactPage() {
         <div id="nav" data-section="nav">
           <NavbarStyleFullscreen
             navItems={[
-              { name: "Home", id: "/" },
+              { name: "Kodu", id: "/" },
               { name: "Minu kohta", id: "/about-page" },
               { name: "Projektide detailne kirjeldus", id: "/projects" },
               { name: "Võta ühendust", id: "/contact" },
