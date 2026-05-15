@@ -10,7 +10,7 @@ import Textarea from '@/components/form/Textarea';
 
 export default function ProjectsPage() {
   const [reasonings, setReasonings] = useState<Record<string, string>>({ 
-    "p1": "Idee luua oma jalgpalliklubi tuli juba 9. klassis. Mõtlesime teha tiimi, mis hakkaks osalema Rahvaliigas, sest paljud meist mängisid juba jalgpalli nii trennis kui ka koolis sõpradega. Oskused ja huvi olid olemas ning vaja oli ainult idee päriselt ellu viia. Pärast ettevalmistusi ja treeninguid toimus meie esimene ametlik mäng 2024. aasta suvel. See oli meie jaoks väga oluline hetk, sest nägime, et väikesest mõttest oli saanud päris jalgpalliklubi. Hiljem osalesime mitmetel turniiridel ning mängisime ka Rahvaliiga B-grupis, kus saime palju uusi kogemusi ja arenesime meeskonnana edasi. Lisaks mängimisele panustasin ka klubi kujunduse ja sotsiaalmeedia poole pealt. Kujundasin ise meie meeskonna särgi ning tegin mõned sotsiaalmeedia postitused, et jagada klubi tegemisi ja tulemusi. Meeskonnas mängin ründajana, kus minu ülesanne on aidata tiimi väravate löömise ja rünnakute loomisega. See projekt õpetas mulle palju meeskonnatööst, vastutuse võtmisest ja loovusest. Samuti sain kogemuse, kuidas ühest lihtsast ideest võib koos sõpradega kasvada päris toimiv jalgpalliklubi.",    "p6": "Reisimine on olnud suur osa minu elust ning selle kaudu olen saanud kogeda erinevaid kultuure, inimesi ja eluviise. Tänaseks olen külastanud juba 36 riiki, mis moodustab umbes 18% kogu maailmast. Mitmes riigis olen käinud ka korduvalt — näiteks Küprosel olen käinud üle viie korra. Reisimine annab mulle võimaluse avastada uusi kohti, õppida tundma erinevaid traditsioone ning näha maailma palju avarama pilguga. Minu külastatud riikide hulka kuuluvad näiteks Egiptus, Bahrein, Gruusia, Iisrael, Palestiina, Venemaa, Türgi, Araabia Ühendemiraadid, Andorra, Austria, Valgevene, Belgia, Bulgaaria, Horvaatia, Küpros, Tšehhi, Soome, Prantsusmaa, Saksamaa, Kreeka, Ungari, Itaalia, Läti, Leedu, Luksemburg, Malta, Montenegro, Holland, Poola, Rumeenia, San Marino, Hispaania, Rootsi, Šveits ja Inglismaa. Reisimine inspireerib mind ka fotograafias, sest iga riik ja linn pakub erinevaid emotsioone, arhitektuuri ja hetki, mida soovin jäädvustada. Tänu reisidele olen muutunud avatumaks, kohanemisvõimelisemaks ning õppinud hindama erinevaid kultuure ja vaatenurki."
+    "p1": "Idee luua oma jalgpalliklubi tuli juba 9. klassis. Mõtlesime teha tiimi, mis hakkaks osalema Rahvaliigas, sest paljud meist mängisid juba jalgpalli nii trennis kui ka koolis sõpradega. Oskused ja huvi olid olemas ning vaja oli ainult idee päriselt ellu viia. Pärast ettevalmistusi ja treeninguid toimus meie esimene ametlik mäng 2024. aasta suvel. See oli meie jaoks väga oluline hetk, sest nägime, et väikesest mõttest oli saanud päris jalgpalliklubi. Hiljem osalesime mitmetel turniiridel ning mängisime ka Rahvaliiga B-grupis, kus saime palju uusi kogemusi ja arenesime meeskonnana edasi. Lisaks mängimisele panustasin ka klubi kujunduse ja sotsiaalmeedia poole pealt. Kujundasin ise meie meeskonna särgi ning tegin mõned sotsiaalmeedia postitused, et jagada klubi tegemisi ja tulemusi. Meeskonnas mängin ründajana, kus minu ülesanne on aidata tiimi väravate löömise ja rünnakute loomisega. See projekt õpetas mulle palju meeskonnatööst, vastutuse võtmisest ja loovusest. Samuti sain kogemuse, kuidas ühest lihtsast ideest võib koos sõpradega kasvada päris toimiv jalgpalliklubi."
   });
   const [activeIndices, setActiveIndices] = useState<Record<string, number>>({});
 
@@ -83,9 +83,13 @@ export default function ProjectsPage() {
                     </div>
                 </div>
                 <div className="bg-[var(--card)] p-4 rounded-3xl border border-[var(--accent)] shadow-2xl">
-                    <div className="p-6 text-xl leading-relaxed whitespace-pre-wrap">
-                      {reasonings[project.id]}
-                    </div>
+                    <Textarea
+                      value={reasonings[project.id] || ""}
+                      onChange={(val) => handleReasoningChange(project.id, val)}
+                      placeholder="Lisa siia detailne kirjeldus..."
+                      rows={15}
+                      className="w-full p-6 text-xl bg-transparent border-none focus:ring-0"
+                    />
                 </div>
               </div>
             ))}
