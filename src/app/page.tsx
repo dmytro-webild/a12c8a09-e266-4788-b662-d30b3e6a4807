@@ -55,8 +55,8 @@ export default function LandingPage() {
       title="Minust ja minu teekonnast"
       description="18-aastane Tallinnast, kes ei suuda paigal istuda. Leian end kas tantsusaalist, jalgpalliväljakult või kuskil maailma teises otsas kaamera käes. Tants on andnud mulle distsipliini, jalgpall meeskonnavaimu ja reisimine perspektiivi — et maailm on palju suurem kui see, mida me ette kujutame. Usun, et parim versioon sinust sünnib siis, kui sa ei lõpeta liikumast."
       metrics={[
-        { value: "18 ", title: "Minu vanus" },
-        { value: "Tallinn ", title: "Asukoht " },
+        { value: "18", title: "Minu vanus" },
+        { value: "Tallinn", title: "Asukoht" },
         { value: "Suurepärane", title: "Suhtlemisoskus" },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=1"
@@ -74,14 +74,12 @@ export default function LandingPage() {
       title="Minu projektid"
       description="Siin on ülevaade minu varasematest projektidest ja tegevustest."
       features={[
-        { id: "p1", title: "Fc Mis Vennad ", description: "Rahvaliiga klubi loomine (Fc Mis Vennad).", tag: "Jalgpall", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png?_wi=1" },
-        { id: "p2", title: "Võistlustants ", description: "Meeskonnatöö arendamine läbi spordi.", tag: "Tants", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg?_wi=1" },
-        { id: "p3", title: "Klienditeenindus", description: "Töötan hetkel Decathlon Tallinna ainsas poes, mis asub Kurna pargis ning on ühtlasi suurim Decathloni pood Baltikumis. Igapäevaselt töötan service-osakonnas, kus minu peamisteks ülesanneteks on töö kassades ja infolauas ning klientide probleemide lahendamine.
-See töö sobib mulle väga hästi, sest naudin suhtlemist ja inimestega töötamist. Mulle meeldib aidata klientidel leida neile sobivaid tooteid ning tutvustada erinevaid lahendusi vastavalt nende vajadustele. Tänu sellele olen arendanud oma suhtlemisoskust, kiiret probleemilahendusvõimet ja oskust töötada pingelistes olukordades.
-Hindan oma töö juures ka häid töötingimusi ja tugevat kollektiivi. Positiivne meeskond ning igapäevane suhtlus erinevate inimestega muudavad töö mitmekesiseks ja motiveerivaks.", tag: "Teenindus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671852101-8oq8hsvm.jpg?_wi=1" },
-        { id: "p4", title: "Meedia ja Disaini suund ", description: "Kiili Gümnaasiumi jooksul projektid ", tag: "Elu ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=2" },
-        { id: "p5", title: "Fotograafia ", description: ".... ", tag: "Innovatsioon", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671911732-kjp1j0l4.jpg?_wi=1" },
-        { id: "p6", title: "Reisimine ", description: "Tutvu koos minuga veidike riikidest ", tag: "Elu ", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778672237771-31zfv4kh.jpg?_wi=1" }
+        { id: "p1", title: "Fc Mis Vennad", description: "Rahvaliiga klubi loomine (Fc Mis Vennad).", tag: "Jalgpall", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778530873115-vm1ju69k.png?_wi=1" },
+        { id: "p2", title: "Võistlustants", description: "Meeskonnatöö arendamine läbi spordi.", tag: "Tants", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778531466534-7mwwuifz.jpg?_wi=1" },
+        { id: "p3", title: "Klienditeenindus", description: "Töötan hetkel Decathlon Tallinna ainsas poes. Arendanud suhtlemisoskust, kiiret probleemilahendusvõimet ja oskust töötada pingelistes olukordades.", tag: "Teenindus", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671852101-8oq8hsvm.jpg?_wi=1" },
+        { id: "p4", title: "Meedia ja Disaini suund", description: "Kiili Gümnaasiumi jooksul projektid", tag: "Elu", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778670506849-y65r1qaw.jpg?_wi=2" },
+        { id: "p5", title: "Fotograafia", description: "...", tag: "Innovatsioon", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778671911732-kjp1j0l4.jpg?_wi=1" },
+        { id: "p6", title: "Reisimine", description: "Tutvu koos minuga veidike riikidest", tag: "Elu", imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778672237771-31zfv4kh.jpg?_wi=1" }
       ]}
     />
   </div>
