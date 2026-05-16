@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
+import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
 import { Instagram, Zap } from 'lucide-react';
 
 export default function ArchivePage() {
@@ -33,10 +34,20 @@ export default function ArchivePage() {
             brandName="Lazar Uleksin"
           />
         </div>
+
         <div id="archive" data-section="archive" className="pt-24 pb-24 px-[var(--vw-1_5)] max-w-[var(--width-content-width)] mx-auto">
-          <h1 className="text-5xl font-bold mb-12 text-center">Tööde arhiiv</h1>
-          <p className="text-xl text-center">Siin on ülevaade varasematest arhiveeritud töödest ja projektidest.</p>
+          <FeatureCardNineteen
+             title="Tööde arhiiv"
+             description="Siin on ülevaade varasematest arhiveeritud töödest ja projektidest."
+             textboxLayout="default"
+             useInvertedBackground={false}
+             features={[
+                { tag: "Arhiiv", title: "Projekt 1", subtitle: "Kirjeldus", description: "Lisateave töö kohta." },
+                { tag: "Arhiiv", title: "Projekt 2", subtitle: "Kirjeldus", description: "Lisateave töö kohta." },
+             ]}
+          />
         </div>
+
         <div id="footer" data-section="footer">
           <FooterCard
             logoText="Lazar Uleksin"
