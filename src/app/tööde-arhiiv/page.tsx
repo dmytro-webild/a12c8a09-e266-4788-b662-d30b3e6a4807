@@ -4,22 +4,21 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
 import { Instagram, Zap } from 'lucide-react';
 
-export default function ContactPage() {
+export default function ArchivePage() {
   return (
     <ThemeProvider
-        defaultButtonVariant="bounce-effect"
-        defaultTextAnimation="entrance-slide"
-        borderRadius="soft"
-        contentWidth="compact"
-        sizing="mediumLarge"
-        background="noiseDiagonalGradient"
-        cardStyle="subtle-shadow"
-        primaryButtonStyle="shadow"
-        secondaryButtonStyle="layered"
-        headingFontWeight="bold"
+      defaultButtonVariant="bounce-effect"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="soft"
+      contentWidth="mediumLarge"
+      sizing="mediumLarge"
+      background="noiseDiagonalGradient"
+      cardStyle="subtle-shadow"
+      primaryButtonStyle="shadow"
+      secondaryButtonStyle="layered"
+      headingFontWeight="bold"
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
@@ -34,22 +33,10 @@ export default function ContactPage() {
             brandName="Lazar Uleksin"
           />
         </div>
-
-        <div id="contact" data-section="contact" className="pt-24">
-          <ContactSplit
-            useInvertedBackground={false}
-            background={{ variant: "plain" }}
-            tag="Kontakt"
-            title="Võta ühendust"
-            description="Olen avatud uutele väljakutsetele ja tööpakkumistele."
-            mediaAnimation="slide-up"
-            mediaPosition="right"
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674542372-t8lrty8t.jpg?_wi=2"
-            imageAlt="Klienditeenindus"
-            termsText="By clicking Sign Up you are confirming that you agree with our Terms and Conditions."
-          />
+        <div id="archive" data-section="archive" className="pt-24 pb-24 px-[var(--vw-1_5)] max-w-[var(--width-content-width)] mx-auto">
+          <h1 className="text-5xl font-bold mb-12 text-center">Tööde arhiiv</h1>
+          <p className="text-xl text-center">Siin on ülevaade varasematest arhiveeritud töödest ja projektidest.</p>
         </div>
-
         <div id="footer" data-section="footer">
           <FooterCard
             logoText="Lazar Uleksin"
