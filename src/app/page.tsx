@@ -43,8 +43,8 @@ export default function LandingPage() {
       background={{ variant: "gradient-bars" }}
       title="Lazar Uleksin"
       description="Discipline is doing it even when you don't feel like it."
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778527447087-zxgb57ao.jpg"
-      imageAlt="Lazar Uleksin headshot"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=1"
+      imageAlt="Lazar Uleksin portree"
       mediaAnimation="slide-up"
       className="[&_.card]:bg-transparent [&_.card]:border-none [&_.card]:shadow-none"
     />
@@ -60,10 +60,10 @@ export default function LandingPage() {
         { value: "Tallinn", title: "Asukoht" },
         { value: "Suurepärane", title: "Suhtlemisoskus" },
       ]}
-      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674801513-jntq5j0h.jpg?_wi=1"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778691500081-h2hs8ikv.jpg"
       mediaAnimation="slide-up"
       metricsAnimation="slide-up"
-      imageAlt="dance studio action shot"
+      imageAlt="Lazar Uleksin portree"
     />
   </div>
 
