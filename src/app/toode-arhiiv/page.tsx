@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
@@ -43,6 +42,7 @@ export default function ToodeArhiivPage() {
               title="Tööde arhiiv"
               description="Kõik varasemad tööd ja projektid ühes kohas."
               features={[]}
+              useInvertedBackground={false}
             />
         </div>
 
