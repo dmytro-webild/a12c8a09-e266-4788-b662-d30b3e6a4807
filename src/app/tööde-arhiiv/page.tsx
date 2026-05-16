@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import FeatureCardNineteen from '@/components/sections/feature/FeatureCardNineteen';
+import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import { Instagram, Zap } from 'lucide-react';
 
 export default function ArchivePage() {
@@ -36,14 +36,15 @@ export default function ArchivePage() {
         </div>
 
         <div id="archive" data-section="archive" className="pt-24 pb-24 px-[var(--vw-1_5)] max-w-[var(--width-content-width)] mx-auto">
-          <FeatureCardNineteen
+          <FeatureCardMedia
              title="Tööde arhiiv"
              description="Siin on ülevaade varasematest arhiveeritud töödest ja projektidest."
+             animationType="slide-up"
              textboxLayout="default"
              useInvertedBackground={false}
              features={[
-                { tag: "Arhiiv", title: "Projekt 1", subtitle: "Kirjeldus", description: "Lisateave töö kohta." },
-                { tag: "Arhiiv", title: "Projekt 2", subtitle: "Kirjeldus", description: "Lisateave töö kohta." },
+                { id: "a1", title: "Projekt 1", description: "Kirjeldus töö kohta.", tag: "Arhiiv" },
+                { id: "a2", title: "Projekt 2", description: "Lisateave töö kohta.", tag: "Arhiiv" },
              ]}
           />
         </div>
