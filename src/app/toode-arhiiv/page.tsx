@@ -1,19 +1,20 @@
 "use client";
 
+import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import ContactSplit from '@/components/sections/contact/ContactSplit';
+import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import { Instagram, Zap } from 'lucide-react';
 
-export default function ContactPage() {
+export default function ToodeArhiivPage() {
   return (
     <ThemeProvider
         defaultButtonVariant="bounce-effect"
         defaultTextAnimation="entrance-slide"
         borderRadius="soft"
-        contentWidth="compact"
+        contentWidth="mediumLarge"
         sizing="mediumLarge"
         background="noiseDiagonalGradient"
         cardStyle="subtle-shadow"
@@ -23,41 +24,36 @@ export default function ContactPage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-          <NavbarStyleFullscreen
+            <NavbarStyleFullscreen
             navItems={[
-              { name: "Home", id: "/" },
-              { name: "Minu kohta", id: "/about-page" },
-              { name: "Projektide detailne kirjeldus", id: "/projects" },
-              { name: "Tööde arhiiv", id: "/toode-arhiiv" },
-              { name: "Võta ühendust", id: "/contact" },
+                { name: "Home", id: "/" },
+                { name: "Minu kohta", id: "/about-page" },
+                { name: "Projektide detailne kirjeldus", id: "/projects" },
+                { name: "Tööde arhiiv", id: "/toode-arhiiv" },
+                { name: "Võta ühendust", id: "/contact" },
             ]}
             brandName="Lazar Uleksin"
-          />
+            />
         </div>
 
-        <div id="contact" data-section="contact" className="pt-24">
-          <ContactSplit
-            useInvertedBackground={false}
-            background={{ variant: "plain" }}
-            tag="Kontakt"
-            title="Võta ühendust"
-            description="Olen avatud uutele väljakutsetele ja tööpakkumistele."
-            mediaAnimation="slide-up"
-            mediaPosition="right"
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DXy63pHOXTf1wMgW8x6XNMvtik/uploaded-1778674542372-t8lrty8t.jpg?_wi=2"
-            imageAlt="Klienditeenindus"
-            termsText="By clicking Sign Up you are confirming that you agree with our Terms and Conditions."
-          />
+        <div id="features" data-section="features" className="pt-24 pb-24">
+            <FeatureCardMedia
+              animationType="slide-up"
+              textboxLayout="split"
+              title="Tööde arhiiv"
+              description="Kõik varasemad tööd ja projektid ühes kohas."
+              features={[]}
+            />
         </div>
 
         <div id="footer" data-section="footer">
-          <FooterCard
+            <FooterCard
             logoText="Lazar Uleksin"
             socialLinks={[
                 { icon: Zap, href: "#", ariaLabel: "TikTok" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" }
             ]}
-          />
+            />
         </div>
       </ReactLenis>
     </ThemeProvider>

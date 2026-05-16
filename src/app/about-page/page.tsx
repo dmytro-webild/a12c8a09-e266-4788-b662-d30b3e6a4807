@@ -30,6 +30,7 @@ export default function AboutPage() {
               { name: "Home", id: "/" },
               { name: "Minu kohta", id: "/about-page" },
               { name: "Projektide detailne kirjeldus", id: "/projects" },
+              { name: "Tööde arhiiv", id: "/toode-arhiiv" },
               { name: "Võta ühendust", id: "/contact" },
             ]}
             brandName="Lazar Uleksin"
