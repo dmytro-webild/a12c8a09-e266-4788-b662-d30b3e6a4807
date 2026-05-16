@@ -31,6 +31,7 @@ export default function LandingPage() {
       navItems={[
         { name: "Home", id: "/" },
         { name: "Minu kohta", id: "/about-page" },
+        { name: "Tööde arhiiv", id: "/tööde-arhiiv" },
         { name: "Projektide detailne kirjeldus", id: "/projects" },
         { name: "Võta ühendust", id: "/contact" },
       ]}
