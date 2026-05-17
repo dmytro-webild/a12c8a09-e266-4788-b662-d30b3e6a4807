@@ -51,7 +51,7 @@ export default function ProjectsPage() {
                 { name: "Home", id: "/" },
                 { name: "Minu kohta", id: "/about-page" },
                 { name: "Projektide detailne kirjeldus", id: "/projects" },
-                { name: "Tööde arhiiv", id: "/toode-arhiiv" },
+                { name: "Tööde arhiiv", id: "https://canva.link/ioqz9m5udeiwbjz" },
                 { name: "Võta ühendust", id: "/contact" },
             ]}
             brandName="Lazar Uleksin"
