@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
 import { Instagram, Zap } from 'lucide-react';
@@ -23,13 +23,13 @@ export default function ToodeArhiivPage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-            <NavbarStyleFullscreen
+            <NavbarStyleApple
             navItems={[
                 { name: "Home", id: "/" },
                 { name: "Minu kohta", id: "/about-page" },
-                { name: "Projektide detailne kirjeldus", id: "/projects" },
-                { name: "Tööde arhiiv", id: "https://canva.link/ioqz9m5udeiwbjz" },
-                { name: "Võta ühendust", id: "/contact" },
+                { name: "Projektid", id: "/projects" },
+                { name: "Arhiiv", id: "https://canva.link/ioqz9m5udeiwbjz" },
+                { name: "Kontakt", id: "/contact" },
             ]}
             brandName="Lazar Uleksin"
             />
