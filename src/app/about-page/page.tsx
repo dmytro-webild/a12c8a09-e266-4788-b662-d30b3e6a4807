@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import { Instagram, Zap } from 'lucide-react';
 
@@ -25,7 +25,7 @@ export default function AboutPage() {
     >
       <ReactLenis root>
         <div id="nav" data-section="nav">
-          <NavbarStyleApple
+          <NavbarStyleFullscreen
             navItems={[
               { name: "Home", id: "/" },
               { name: "Minu kohta", id: "/about-page" },
