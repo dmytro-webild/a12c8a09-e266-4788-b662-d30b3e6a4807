@@ -8,7 +8,7 @@ import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
+import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import { Instagram, Zap } from 'lucide-react';
 
 export default function LandingPage() {
@@ -27,7 +27,7 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleApple
+      <NavbarStyleFullscreen
       navItems={[
         { name: "Home", id: "/" },
         { name: "Minu kohta", id: "/about-page" },
