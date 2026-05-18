@@ -8,7 +8,7 @@ import FooterCard from '@/components/sections/footer/FooterCard';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import MetricSplitMediaAbout from '@/components/sections/about/MetricSplitMediaAbout';
 import FaqDouble from '@/components/sections/faq/FaqDouble';
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import { Instagram, Zap } from 'lucide-react';
 
 export default function LandingPage() {
@@ -27,13 +27,13 @@ export default function LandingPage() {
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
-      <NavbarStyleFullscreen
+      <NavbarStyleApple
       navItems={[
         { name: "Home", id: "/" },
         { name: "Minu kohta", id: "/about-page" },
-        { name: "Projektide detailne kirjeldus", id: "/projects" },
-        { name: "Tööde arhiiv", id: "https://canva.link/ioqz9m5udeiwbjz" },
-        { name: "Võta ühendust", id: "/contact" },
+        { name: "Projektid", id: "/projects" },
+        { name: "Arhiiv", id: "https://canva.link/ioqz9m5udeiwbjz" },
+        { name: "Kontakt", id: "/contact" },
       ]}
       brandName="Lazar Uleksin"
     />
