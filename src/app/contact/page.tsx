@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import { Instagram, Zap, FileText } from 'lucide-react';
+import { Instagram, Zap } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -55,7 +55,6 @@ export default function ContactPage() {
             logoText="Lazar Uleksin"
             socialLinks={[
                 { icon: Zap, href: "#", ariaLabel: "TikTok" },
-                { icon: FileText, href: "https://www.cvkeskus.ee/cv/2816808/pdf", ariaLabel: "CV" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" }
             ]}
           />
