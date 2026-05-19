@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
-import { Instagram, Zap } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 export default function ToodeArhiivPage() {
   return (
@@ -50,7 +50,6 @@ export default function ToodeArhiivPage() {
             <FooterCard
             logoText="Lazar Uleksin"
             socialLinks={[
-                { icon: Zap, href: "#", ariaLabel: "TikTok" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" }
             ]}
             />
