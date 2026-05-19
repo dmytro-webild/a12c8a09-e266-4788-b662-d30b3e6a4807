@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
-import { Instagram } from 'lucide-react';
+import { Instagram, Music } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -54,7 +54,8 @@ export default function ContactPage() {
           <FooterCard
             logoText="Lazar Uleksin"
             socialLinks={[
-                { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" }
+                { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" },
+                { icon: Music, href: "https://www.tiktok.com/@lassu51", ariaLabel: "TikTok" }
             ]}
           />
         </div>
