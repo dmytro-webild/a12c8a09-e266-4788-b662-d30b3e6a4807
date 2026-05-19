@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Instagram, Zap } from 'lucide-react';
+import { Instagram, Zap, FileText } from 'lucide-react';
 
 export default function ProjectsPage() {
   const [reasonings] = useState<Record<string, string>>({ 
@@ -79,6 +79,7 @@ export default function ProjectsPage() {
             logoText="Lazar Uleksin"
             socialLinks={[
                 { icon: Zap, href: "#", ariaLabel: "TikTok" },
+                { icon: FileText, href: "https://www.cvkeskus.ee/cv/2816808/pdf", ariaLabel: "CV" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" }
             ]}
             />
