@@ -5,7 +5,7 @@ import ReactLenis from "lenis/react";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import FooterCard from '@/components/sections/footer/FooterCard';
 import FeatureCardMedia from '@/components/sections/feature/FeatureCardMedia';
-import { Instagram, Zap, FileText } from 'lucide-react';
+import { Instagram, Zap } from 'lucide-react';
 
 export default function ToodeArhiivPage() {
   return (
@@ -51,7 +51,6 @@ export default function ToodeArhiivPage() {
             logoText="Lazar Uleksin"
             socialLinks={[
                 { icon: Zap, href: "#", ariaLabel: "TikTok" },
-                { icon: FileText, href: "https://www.cvkeskus.ee/cv/2816808/pdf", ariaLabel: "CV" },
                 { icon: Instagram, href: "https://www.instagram.com/lazaruleksin?igsh=dzh6bDl4emVyN2dj&utm_source=qr", ariaLabel: "Instagram" }
             ]}
             />
