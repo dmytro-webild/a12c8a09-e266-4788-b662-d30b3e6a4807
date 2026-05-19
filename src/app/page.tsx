@@ -32,6 +32,7 @@ export default function LandingPage() {
         { name: "Home", id: "/" },
         { name: "Minu kohta", id: "/about-page" },
         { name: "Projektid", id: "/projects" },
+        { name: "CV", id: "/cv" },
         { name: "Arhiiv", id: "https://canva.link/ioqz9m5udeiwbjz" },
         { name: "Kontakt", id: "/contact" },
       ]}
